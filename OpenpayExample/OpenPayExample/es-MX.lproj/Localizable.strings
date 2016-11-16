@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  OpenpayExample
+
+  Created by Israel Grijalva Correa on 10/10/16.
+  Copyright © 2016 Openpay. All rights reserved.
+*/
+"session.error" = "\n\nOcurrió un error al generar el SessionID. \n\n Error: %@\n\n";
+"token.success" = "\n\nEl token para la tarjeta se generó correctamente. \n\nSessionID: %@\n\nTokenID: %@\n\n";
+"tokenid.success" = "\n\nSe obtuvieron los datos de la tarjeta para el TokenID: %@ \n\n Número: %@\n Nombre: %@\n\n\n";
+"token.error" = "\n\nOcurrió un error al generar el token. \n\n Error: %@\n\n";

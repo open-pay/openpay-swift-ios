@@ -1,0 +1,15 @@
+/* 
+  Messages.strings
+  Openpay
+
+  Created by Israel Grijalva Correa on 10/10/16.
+  Copyright © 2016 Openpay. All rights reserved.
+*/
+"error.json" = "The response from Openpay failed to get parsed into valid JSON.";
+"error.session" = "The sessionID can not be generated, please try again";
+"error.request" = "Response with http error";
+"debug.request" = "Sending request to";
+"debug.responseok" = "Ok! Valid response received";
+"button.cancel" = "Cancel";
+"button.continue" = "Continue";
+"month.names" = "January,February,March,April,May,June,July,August,September,October,November,December";

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardView" customModule="Openpay" customModuleProvider="target"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="Openpay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="98" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvE-vP-6lx">
+                    <subviews>
+                        <view tag="97" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-dZ-zfR" customClass="CardView" customModule="Openpay" customModuleProvider="target">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-JF-CoE">
+                                    <frame key="frameInset" minX="5" minY="24" height="50" maxX="6"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95700005515251751" green="0.95700005515251751" blue="0.95700005515251751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Holder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Mc-4J-jq8" customClass="SecureUITextField" customModule="Openpay" customModuleProvider="target">
+                                    <frame key="frameInset" minX="81.5" minY="27" height="45" maxX="7"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iom-EU-7fC">
+                                    <frame key="frameInset" minX="5" minY="84" height="50" maxX="6"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95700005519999998" green="0.95700005519999998" blue="0.95700005519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cardNumber" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Card Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y66-o9-LKL" customClass="SecureUITextField" customModule="Openpay" customModuleProvider="target">
+                                    <frame key="frameInset" minX="87" minY="87" height="45" maxX="3.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Expiration Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGe-5p-jab">
+                                    <frame key="frameInset" minX="5.5" minY="144" height="50" maxX="5.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95700005519999998" green="0.95700005519999998" blue="0.95700005519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHn-RZ-hru">
+                                    <frame key="frameInset" minX="130" minY="144" height="50" maxX="8"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="MM / YYYY"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Security Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByV-OR-tnK">
+                                    <frame key="frameInset" minX="5.5" minY="204" height="50" maxX="5.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.95700005519999998" green="0.95700005519999998" blue="0.95700005519999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="cvv" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="CVV2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwg-qA-3kT" customClass="SecureUITextField" customModule="Openpay" customModuleProvider="target">
+                                    <frame key="frameInset" minX="130" minY="207" height="45" maxX="6"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98661064453075586" green="0.98661064453075586" blue="0.98661064453075586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="514" id="Nah-eJ-Ssg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yUK-dZ-zfR" secondAttribute="trailing" id="2sC-QE-yaU"/>
+                        <constraint firstItem="yUK-dZ-zfR" firstAttribute="leading" secondItem="xvE-vP-6lx" secondAttribute="leading" id="7dQ-XA-9aa"/>
+                        <constraint firstItem="yUK-dZ-zfR" firstAttribute="top" secondItem="xvE-vP-6lx" secondAttribute="top" id="ILG-6X-xft"/>
+                        <constraint firstAttribute="bottom" secondItem="yUK-dZ-zfR" secondAttribute="bottom" id="MXD-1k-LAw"/>
+                    </constraints>
+                </scrollView>
+                <view hidden="YES" tag="94" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-7k-yI5">
+                    <frame key="frameInset" height="41.75%"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                    <subviews>
+                        <pickerView tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZR-lf-fCU">
+                            <frame key="frameInset" minY="45" maxY="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </pickerView>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" tag="95" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-yX-WGO">
+                            <frame key="frameInset" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="fTo-yA-cDP"/>
+                                <barButtonItem tag="93" title="OK" style="done" id="q2Y-S4-LbU"/>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <navigationBar tag="99" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-Yd-msu">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xDi-op-9g5"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="Ghu-t2-ZaO"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.98661064450000002" green="0.98661064450000002" blue="0.98661064450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xvE-vP-6lx" firstAttribute="top" secondItem="GQe-Yd-msu" secondAttribute="bottom" id="EeR-lL-gD2"/>
+                <constraint firstAttribute="bottom" secondItem="xvE-vP-6lx" secondAttribute="bottom" id="ZXf-hi-Rli"/>
+                <constraint firstItem="xvE-vP-6lx" firstAttribute="top" secondItem="GQe-Yd-msu" secondAttribute="bottom" id="eBL-PX-Aum"/>
+                <constraint firstItem="xvE-vP-6lx" firstAttribute="top" secondItem="GQe-Yd-msu" secondAttribute="bottom" id="f4K-LY-vWz"/>
+                <constraint firstAttribute="trailing" secondItem="xvE-vP-6lx" secondAttribute="trailing" id="h76-LN-bfg"/>
+                <constraint firstAttribute="trailing" secondItem="GQe-Yd-msu" secondAttribute="trailing" id="hUS-BU-t9B"/>
+                <constraint firstItem="GQe-Yd-msu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="kgz-bR-gMV"/>
+                <constraint firstItem="xvE-vP-6lx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lPG-h7-txF"/>
+                <constraint firstItem="GQe-Yd-msu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="npY-hq-MKa"/>
+                <constraint firstItem="yUK-dZ-zfR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ut4-Fh-BdX"/>
+            </constraints>
+            <point key="canvasLocation" x="43.5" y="22.5"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>
