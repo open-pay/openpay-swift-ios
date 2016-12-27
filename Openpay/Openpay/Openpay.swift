@@ -33,6 +33,7 @@ public class Openpay {
     private var queue: OperationQueue!
     private var isDebug: Bool!
     private var hostViewController: UIViewController!
+    private var cardViewController: UIViewController!
     private weak var activeField: UITextField?
     
     private var cardView: UIView!
@@ -255,12 +256,15 @@ public class Openpay {
                             ) {
         print("Display CardForm")
         processCard = OPCard()
-        self.hostViewController = viewController
         cardView = CardView.instanceFromNib()
         cardView.translatesAutoresizingMaskIntoConstraints = (false)
-        self.hostViewController.view.addSubview(cardView)
-        self.hostViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
-        self.hostViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
+        self.hostViewController = viewController
+        self.cardViewController = UIViewController()
+        self.cardViewController.view.addSubview(cardView)
+        self.cardViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
+        self.cardViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
+        self.hostViewController.present(self.cardViewController, animated: true, completion: nil)
+
         
         self.successCard = successFunction
         self.failureCard = failureFunction
@@ -268,37 +272,37 @@ public class Openpay {
         let touch = UITapGestureRecognizer(target:self, action: #selector(touchView) )
         cardView.addGestureRecognizer(touch)
         
-        if let navigationBar = self.hostViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
+        if let navigationBar = self.cardViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
             navigationBar.topItem?.title = formTitle
             navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.cancel", bundle: Bundle(for: Openpay.self), comment: "Cancel"), style: .plain, target: self, action: #selector(Openpay.cancelAction))
             navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.continue", bundle: Bundle(for: Openpay.self), comment: "Continue"), style: .done, target: self, action: #selector(Openpay.continueProcess))
             navigationBar.topItem?.rightBarButtonItem?.isEnabled = false
         }
         
-        if let holderField = self.hostViewController.view.viewWithTag(indexTag.holder.rawValue) as? SecureUITextField {
+        if let holderField = self.cardViewController.view.viewWithTag(indexTag.holder.rawValue) as? SecureUITextField {
             holderField.addTarget(self, action: #selector( Openpay.holderChange(textField:) ), for: UIControlEvents.editingChanged)
             holderField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidBegin)
             holderField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidEnd)
             holderField.delegate = holderField
         }
         
-        if let cardNumberField = self.hostViewController.view.viewWithTag(indexTag.card.rawValue) as? SecureUITextField {
+        if let cardNumberField = self.cardViewController.view.viewWithTag(indexTag.card.rawValue) as? SecureUITextField {
             cardNumberField.addTarget(self, action: #selector( Openpay.cardNumberChange(textField:) ), for: UIControlEvents.editingChanged)
             cardNumberField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidBegin)
             cardNumberField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidEnd)
         }
         
-        if let cvvField = self.hostViewController.view.viewWithTag(indexTag.cvv.rawValue) as? SecureUITextField {
+        if let cvvField = self.cardViewController.view.viewWithTag(indexTag.cvv.rawValue) as? SecureUITextField {
             cvvField.addTarget(self, action: #selector( Openpay.cvvChange(textField:) ), for: UIControlEvents.editingChanged)
             cvvField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidBegin)
             cvvField.addTarget(self, action: #selector( Openpay.textFieldDidBeginEditing(textField:) ), for: UIControlEvents.editingDidEnd)
         }
         
-        if let dateField = self.hostViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
+        if let dateField = self.cardViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
             dateField.addTarget(self, action: #selector( Openpay.showDatePicker ), for: UIControlEvents.touchDown)
         }
         
-        if let picker = self.hostViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
+        if let picker = self.cardViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
             pickerControl = PickerControl()
             var monthNames = NSLocalizedString("month.names", bundle: Bundle(for: Openpay.self), comment: "Month names")
             pickerControl.generateDates(monthLocalized: monthNames)
@@ -306,22 +310,20 @@ public class Openpay {
             picker.delegate = pickerControl
         }
         
-        if let pickerBar = self.hostViewController.view.viewWithTag(indexTag.pickerBar.rawValue) as? UIToolbar {
+        if let pickerBar = self.cardViewController.view.viewWithTag(indexTag.pickerBar.rawValue) as? UIToolbar {
             pickerBar.items?[1] = UIBarButtonItem(title: "OK", style: .done, target: self, action: #selector( Openpay.finishPick ))
         }
         
-        if let scrollView = self.hostViewController.view.viewWithTag(indexTag.scroll.rawValue) as? UIScrollView {
+        if let scrollView = self.cardViewController.view.viewWithTag(indexTag.scroll.rawValue) as? UIScrollView {
             self.scrollView = scrollView
+            let contentInsets = UIEdgeInsets.zero
+            self.scrollView.contentInset = contentInsets
+            self.scrollView.scrollIndicatorInsets = contentInsets
         }
         
-        if let inView = self.hostViewController.view.viewWithTag(indexTag.inview.rawValue) as? CardView {
+        if let inView = self.cardViewController.view.viewWithTag(indexTag.inview.rawValue) as? CardView {
             self.inview = inView
         }
-        
-        let contentInsets = UIEdgeInsets.zero
-        self.scrollView.contentInset = contentInsets
-        self.scrollView.scrollIndicatorInsets = contentInsets
-        
 
     }
     
@@ -332,7 +334,7 @@ public class Openpay {
     
     @objc private func continueProcess() {
         self.successCard()
-        cardView.removeFromSuperview()
+        self.cardViewController.dismiss(animated: true, completion: nil);
     }
     
     private func textFieldShouldReturn(textField: UITextField) {
@@ -340,7 +342,7 @@ public class Openpay {
         if nextTage == indexTag.picker.rawValue {
             showDatePicker()
         }else {
-            let nextResponder=self.hostViewController.view.viewWithTag(nextTage) as UIResponder!
+            let nextResponder=self.cardViewController.view.viewWithTag(nextTage) as UIResponder!
             if (nextResponder != nil){
                 nextResponder?.becomeFirstResponder()
             } else {
@@ -359,7 +361,7 @@ public class Openpay {
     }
     
     @objc private func cancelAction() {
-        cardView.removeFromSuperview()
+        self.cardViewController.dismiss(animated: true, completion: nil);
     }
     
     private func validateCharacters(textFieldToChange: UITextField) {
@@ -372,7 +374,7 @@ public class Openpay {
     
     @objc private func touchView() {
         cardView.endEditing(true)
-        if let pickerView = self.hostViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
+        if let pickerView = self.cardViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
             if pickerView.isHidden == false { finishPick() }
         }
     }
@@ -387,7 +389,7 @@ public class Openpay {
     
     @objc private func keyboardDidShow(notification: NSNotification) {
         if let activeField = self.activeField, let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if let pickerView = self.hostViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
+            if let pickerView = self.cardViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
                 if pickerView.isHidden == false { finishPick() }
             }
             
@@ -410,7 +412,7 @@ public class Openpay {
     
     @objc private func showDatePicker() {
         cardView.endEditing(true)
-        if let pickerView = self.hostViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
+        if let pickerView = self.cardViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
             pickerView.isHidden = false
             
             let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: pickerView.bounds.height, right: 0.0)
@@ -418,7 +420,7 @@ public class Openpay {
             scrollView.scrollIndicatorInsets = contentInsets
             var aRect = cardView.frame
             aRect.size.height -= pickerView.bounds.size.height
-            if let dateField = self.hostViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
+            if let dateField = self.cardViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
                 if (!aRect.contains(dateField.frame.origin)) {
                     scrollView.scrollRectToVisible(dateField.frame, animated: true)
                 }
@@ -431,7 +433,6 @@ public class Openpay {
     
     private func formatCardNumber(cardNumber: String, type: OPCard.OPCardType) -> String {
         let cleanNumber: String = cardNumber.replacingOccurrences(of: " ", with: "")
-        //let cleanNumber: String = cardNumber.trimmingCharacters(in: .whitespaces)
         let separator: Character = " "
         var segments: [Int] = [0]
         var outNumber: String = ""
@@ -514,14 +515,14 @@ public class Openpay {
     }
     
     @objc private func finishPick() {
-        if let pickerView = self.hostViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
+        if let pickerView = self.cardViewController.view.viewWithTag(indexTag.pickerView.rawValue) {
             pickerView.isHidden = true
             let contentInsets = UIEdgeInsets.zero
             self.scrollView.contentInset = contentInsets
             self.scrollView.scrollIndicatorInsets = contentInsets
         }
-        if let dateField = self.hostViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
-            if let picker = self.hostViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
+        if let dateField = self.cardViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
+            if let picker = self.cardViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
                 var month: PickerItem = pickerControl.pickerItems[0][picker.selectedRow(inComponent: 0)]
                 var year: PickerItem = pickerControl.pickerItems[1][picker.selectedRow(inComponent: 1)]
                 processCard.expirationMonth = String(format: "%02d", month.value)
@@ -529,7 +530,7 @@ public class Openpay {
                 dateField.setTitle(String(format: "%02d / %04d", month.value, year.value), for: UIControlState.normal)
                 checkButtonCard()
                 let nextTag = picker.tag+1;
-                let nextResponder = self.hostViewController.view.viewWithTag(nextTag) as UIResponder!
+                let nextResponder = self.cardViewController.view.viewWithTag(nextTag) as UIResponder!
                 if (nextResponder != nil) {
                     nextResponder?.becomeFirstResponder()
                 } else {
@@ -540,19 +541,19 @@ public class Openpay {
     }
     
     private func checkButtonCard() {
-        if let cardNumberField = self.hostViewController.view.viewWithTag(indexTag.card.rawValue) as? SecureUITextField {
+        if let cardNumberField = self.cardViewController.view.viewWithTag(indexTag.card.rawValue) as? SecureUITextField {
             cardNumberField.textColor = processCard.numberValid ? UIColor.black : UIColor.red
         }
         
-        if let dateField = self.hostViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
+        if let dateField = self.cardViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
             dateField.tintColor = !processCard.expired ? UIColor.black : UIColor.red
         }
         
-        if let cvvField = self.hostViewController.view.viewWithTag(indexTag.cvv.rawValue) as? SecureUITextField {
+        if let cvvField = self.cardViewController.view.viewWithTag(indexTag.cvv.rawValue) as? SecureUITextField {
             cvvField.textColor = (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) ? UIColor.black : UIColor.red
         }
 
-        if let navigationBar = self.hostViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
+        if let navigationBar = self.cardViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
             let enabled = processCard.valid && (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) && holderValid
             navigationBar.topItem?.rightBarButtonItem?.isEnabled = enabled
         }

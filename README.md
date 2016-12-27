@@ -17,7 +17,7 @@ Please refer to the following documentation sections for field documentation:
 
 ## Installation
 
-- [Download the pre-built framework](https://github.com/open-pay/openpay-ios/releases).
+- [Download the pre-built framework](https://github.com/open-pay/openpay-swift-ios/releases).
 - Add Openpay to your project -> Link Binary With Libraries and Link Framework.
 - Add CoreLocation.framework to Build Phases -> Link Binary With Libraries.
 
