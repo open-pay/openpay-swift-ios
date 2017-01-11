@@ -166,7 +166,7 @@ public class Openpay {
         request.httpMethod = httpMethod
         request.setValue("application/json", forHTTPHeaderField:"Content-Type")
         request.setValue(String(format: "application/json;revision=%@",Openpay.API_VERSION), forHTTPHeaderField:"Accept")
-        request.setValue(String(format: "OpenPay-iOS/%@", Openpay.OPENPAY_IOS_VERSION), forHTTPHeaderField:"User-Agent")
+        request.setValue(String(format: "OpenPay-iOS-SW/%@", Openpay.OPENPAY_IOS_VERSION), forHTTPHeaderField:"User-Agent")
         
         
         let authStr: String = String(format: "%@:%@", self.apiKey, "")
