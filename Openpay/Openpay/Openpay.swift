@@ -263,20 +263,28 @@ public class Openpay {
         self.cardViewController.view.addSubview(cardView)
         self.cardViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
         self.cardViewController.view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[view]-0-|", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view":cardView]))
-        self.hostViewController.present(self.cardViewController, animated: true, completion: nil)
-
+        
+        let nav = UINavigationController(rootViewController: cardViewController)
+        self.hostViewController.present(nav, animated: true, completion: nil)
         
         self.successCard = successFunction
         self.failureCard = failureFunction
         
         let touch = UITapGestureRecognizer(target:self, action: #selector(touchView) )
         cardView.addGestureRecognizer(touch)
-        
-        if let navigationBar = self.cardViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
-            navigationBar.topItem?.title = formTitle
-            navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.cancel", bundle: Bundle(for: Openpay.self), comment: "Cancel"), style: .plain, target: self, action: #selector(Openpay.cancelAction))
-            navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.continue", bundle: Bundle(for: Openpay.self), comment: "Continue"), style: .done, target: self, action: #selector(Openpay.continueProcess))
-            navigationBar.topItem?.rightBarButtonItem?.isEnabled = false
+      
+        // set actions for each button
+        if let topItem = nav.navigationBar.topItem {
+            topItem.leftBarButtonItem = UIBarButtonItem(title: "Cancelar",
+                                                        style: .plain,
+                                                        target: self,
+                                                        action: #selector(Openpay.cancelAction))
+            topItem.rightBarButtonItem = UIBarButtonItem(title: "Guardar",
+                                                         style: .done,
+                                                         target: self,
+                                                         action: #selector(Openpay.continueProcess))
+            
+            topItem.rightBarButtonItem?.isEnabled = false
         }
         
         if let holderField = self.cardViewController.view.viewWithTag(indexTag.holder.rawValue) as? SecureUITextField {
@@ -553,9 +561,12 @@ public class Openpay {
             cvvField.textColor = (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) ? UIColor.black : UIColor.red
         }
 
-        if let navigationBar = self.cardViewController.view.viewWithTag(indexTag.navBar.rawValue) as? UINavigationBar {
-            let enabled = processCard.valid && (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) && holderValid
-            navigationBar.topItem?.rightBarButtonItem?.isEnabled = enabled
+        let enabled = processCard.valid &&
+                      (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) &&
+                      holderValid
+        
+        if let topItem = cardViewController.navigationController?.navigationBar.topItem {
+            topItem.rightBarButtonItem?.isEnabled = enabled
         }
     }
     
