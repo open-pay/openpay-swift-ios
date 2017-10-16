@@ -196,7 +196,7 @@ public class Openpay {
                 if let httpResponse = response as? HTTPURLResponse {
                     print("error \(httpResponse.statusCode)")
                 }
-                if (self.isDebug==true) { print( String(format: "%@ %@", NSLocalizedString("error.request", bundle: Bundle(for: Openpay.self), comment: "Error JSON"), "\(errorUrl)") ) }
+                if (self.isDebug==true) { print( String(format: "%@ %@", NSLocalizedString("error.request", bundle: Bundle(for: Openpay.self), comment: "Error JSON"), "\(String(describing: errorUrl))") ) }
                 operationError = errorUrl as NSError!
                 failureFunction(operationError)
                 return
@@ -275,11 +275,11 @@ public class Openpay {
       
         // set actions for each button
         if let topItem = nav.navigationBar.topItem {
-            topItem.leftBarButtonItem = UIBarButtonItem(title: "Cancelar",
+            topItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.cancel", bundle: Bundle(for: Openpay.self), comment: "Cancel"),
                                                         style: .plain,
                                                         target: self,
                                                         action: #selector(Openpay.cancelAction))
-            topItem.rightBarButtonItem = UIBarButtonItem(title: "Guardar",
+            topItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.continue", bundle: Bundle(for: Openpay.self), comment: "Continue"),
                                                          style: .done,
                                                          target: self,
                                                          action: #selector(Openpay.continueProcess))
@@ -312,7 +312,7 @@ public class Openpay {
         
         if let picker = self.cardViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
             pickerControl = PickerControl()
-            var monthNames = NSLocalizedString("month.names", bundle: Bundle(for: Openpay.self), comment: "Month names")
+            let monthNames = NSLocalizedString("month.names", bundle: Bundle(for: Openpay.self), comment: "Month names")
             pickerControl.generateDates(monthLocalized: monthNames)
             picker.dataSource = pickerControl
             picker.delegate = pickerControl
@@ -454,8 +454,6 @@ public class Openpay {
             segments = [4,10,15]
         case OPCard.OPCardType.OPCardTypeUnknown:
             segments = [4,8,12,16]
-        default:
-            segments = [0]
         }
         
         var ci: Int = 0;
@@ -512,7 +510,7 @@ public class Openpay {
     @objc private func cvvChange(textField: UITextField) {
         let max = 41
         processCard.cvv2 = textField.text!
-        var cvvValid = processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed
+        let cvvValid = processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed
         if cvvValid {
             textField.superview?.endEditing(true)
         }
@@ -531,8 +529,8 @@ public class Openpay {
         }
         if let dateField = self.cardViewController.view.viewWithTag(indexTag.date.rawValue) as? UIButton {
             if let picker = self.cardViewController.view.viewWithTag(indexTag.picker.rawValue) as? UIPickerView {
-                var month: PickerItem = pickerControl.pickerItems[0][picker.selectedRow(inComponent: 0)]
-                var year: PickerItem = pickerControl.pickerItems[1][picker.selectedRow(inComponent: 1)]
+                let month: PickerItem = pickerControl.pickerItems[0][picker.selectedRow(inComponent: 0)]
+                let year: PickerItem = pickerControl.pickerItems[1][picker.selectedRow(inComponent: 1)]
                 processCard.expirationMonth = String(format: "%02d", month.value)
                 processCard.expirationYear = String(format: "%02d", (year.value-2000))
                 dateField.setTitle(String(format: "%02d / %04d", month.value, year.value), for: UIControlState.normal)
