@@ -51,7 +51,7 @@
 		729190EA1DA4496800C0CD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729190EC1DA4496800C0CD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3804C71FD870090064F0B8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		CE3804C91FD870190064F0B8 /* Openpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Openpay.framework; path = "../../../../../Users/User/Library/Developer/Xcode/DerivedData/Openpay-gihcsouuoysgnkhbeyjkjylrmwbl/Build/Products/Debug-iphonesimulator/Openpay.framework"; sourceTree = "<group>"; };
+		CE3804C91FD870190064F0B8 /* Openpay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Openpay.framework; path = "../../../../Openpay-fzbinsebdtueqkgfbclhpnelqdvo/Build/Products/Debug-iphonesimulator/Openpay.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
