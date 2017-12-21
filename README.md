@@ -19,9 +19,9 @@ Please refer to the following documentation sections for field documentation:
 ## Installation
 
 - Download the latest released version (SDK-v2.0.0.zip).
-- Add openpay framework (openpay-v2.0.0.framework) to General -> Linked Framework and Libraries in your APP TARGETS.
-- Add openpay framework (openpay-v2.0.0.framework) to General -> Embeded Binaries in your APP TARGETS.
-- Add webkit framework to Build Phases -> Link Binary With Libraries in your APP TARGETS.
+- Add openpay framework (openpay-v2.0.0.framework) to General -> Linked Framework and Libraries.
+- Add openpay framework (openpay-v2.0.0.framework) to General -> Embeded Binaries.
+- Add webkit framework to Build Phases -> Link Binary With Libraries.
 
 ## Usage
 
