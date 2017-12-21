@@ -1,8 +1,8 @@
 ![Openpay iOS](http://www.openpay.mx/img/github/ios.jpg)
 
-iOS Swift library for tokenizing credit/debit card and collect device information
+iOS swift library for tokenizing credit/debit card and collect device information
 
-Current version : v1.1.0
+Current version: v2.0.0
 
 Looking for Objective-C Version? Checkout: (https://github.com/open-pay/openpay-ios)
 
@@ -12,30 +12,16 @@ Please refer to the following documentation sections for field documentation:
 
 ## Requirements
 
+- iOS SDK 10.3+
 - ARC
-- CoreLocation.framework
+- WebKit.framework
 
 ## Installation
 
-- Download the latest released version.
-- Add Openpay framework to General -> Linked Framework and Libraries in your APP TARGETS.
-- Add Openpay framework to General -> Embeded Binaries in your APP TARGETS.
-- Add CoreLocation framework to Build Phases -> Link Binary With Libraries in your APP TARGETS.
-
-### Location Permissions
-
-For location collection support you'll need to add this key to your
-**Info.plist** file:
-
-```
-<key>NSLocationWhenInUseUsageDescription</key>
-<string></string>
-```
-
-If you set `KLocationCollectorConfigRequestPermission` as the string value, the collector
-will request permission for you if needed. If you set
-`KLocationCollectorConfigPassive` as the string value, the collector will only gather
-location information if your app has requested permission and the user has granted it permission.
+- Download the latest released version (SDK-v2.0.0.zip).
+- Add openpay framework (openpay-v2.0.0.framework) to General -> Linked Framework and Libraries in your APP TARGETS.
+- Add openpay framework (openpay-v2.0.0.framework) to General -> Embeded Binaries in your APP TARGETS.
+- Add webkit framework to Build Phases -> Link Binary With Libraries in your APP TARGETS.
 
 ## Usage
 
@@ -126,11 +112,3 @@ openpay.createTokenWithCard(address: nil,
 ##### Response
 
 If the request is correct, return an instance of OPToken.
-
-
-## Contributing
-
-
-#### Tests
-
-Please include tests with all new code. Also, all existing tests must pass before new code can be merged.
