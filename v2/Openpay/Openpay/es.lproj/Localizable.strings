@@ -7,8 +7,8 @@
 */
 "error.json" = "La respuesta de Openpay no pudo convertirse a JSON.";
 "error.session" = "El sessionID no pudo generarse, por favor intente de nuevo";
-"error.request" = "Respuesta con error";;
-"debug.request" = "Enviando petición a"
+"error.request" = "Respuesta con error";
+"debug.request" = "Enviando petición a";
 "debug.responseok" = "Ok! Se recibió una respuesta correcta";
 "button.cancel" = "Cancelar";
 "button.continue" = "Continuar";
