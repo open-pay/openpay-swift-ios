@@ -19,9 +19,12 @@ Please refer to the following documentation sections for field documentation:
 ## Installation
 
 - Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v2.0.0/SDK-v2.0.0.zip).
-- Add openpay framework (openpay-v2.0.0.framework) to General -> Linked Framework and Libraries.
-- Add openpay framework (openpay-v2.0.0.framework) to General -> Embeded Binaries.
-- Add webkit framework to Build Phases -> Link Binary With Libraries.
+- Add openpay framework (Openpay.framework) to General -> Embeded Binaries.
+	- In the popup, click "Add Other..." option
+	- Select the file "Openpay.framework"
+	- Check the option "Copy items if needed"
+- Add webkit framework to General -> Linked Framework and Libraries.
+	- Search for "WebKit.framework", select it and click "add"
 
 ## Usage
 
@@ -36,10 +39,9 @@ For create an instance Openpay needs:
 - Public API Key
 
 ```swift
-let openpay = Openpay(withMerchantId: "Your Merchant ID",
-							   andApiKey: "Your Private Key",
-						isProductionMode: false,
-						         isDebug: false)
+var openpay : Openpay!
+
+openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: false, isDebug: false)
 ```
 
 #### Production Mode
@@ -47,10 +49,9 @@ let openpay = Openpay(withMerchantId: "Your Merchant ID",
 Use isProductionMode = true
 
 ```swift
-let openpay = Openpay(withMerchantId: "Your Merchant ID",
-							   andApiKey: "Your Private Key",
-						isProductionMode: true,
-						         isDebug: false)
+var openpay : Openpay!
+
+openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
 ```
 
 #### Create a SessionID
@@ -61,13 +62,11 @@ The following parameters are required:
 -Function to call when error occurs
 
 ```swift
-let openpay = Openpay(withMerchantId: "Your Merchant ID",
-							   andApiKey: "Your Private Key",
-						isProductionMode: true,
-						         isDebug: false)
+var openpay : Openpay!
 
-openpay.createDeviceSessionId(successFunction: successSessionID,
-							  failureFunction: failSessionID)
+openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
+
+openpay.createDeviceSessionId(successFunction: successSessionID, failureFunction: failSessionID)
 ```
 
 #### Display Card Form
@@ -80,10 +79,9 @@ For display the form you need to pass the following parameters:
 -The title to display at the top of form
 
 ```swift
-openpay.loadCardForm(in: self,
-		successFunction: successCard,
-		failureFunction: failCard,
-			  formTitle: "Openpay")
+var openpay : Openpay!
+
+openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
 ```
 
 #### Create a token
@@ -93,19 +91,13 @@ For more information about how to create a token, please refer to [Create a toke
 ##### With only required fields captured by the user
 
 ```swift
-let openpay = Openpay(withMerchantId: "Your Merchant ID",
-							   andApiKey: "Your Private Key",
-						isProductionMode: true,
-						         isDebug: false)
+var openpay : Openpay!
 
-openpay.loadCardForm(in: self,
-		successFunction: successCard,
-		failureFunction: failCard,
-			  formTitle: "Openpay")
+openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
 
-openpay.createTokenWithCard(address: nil,
-					successFunction: successToken,
-					failureFunction: failToken)
+openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
+
+openpay.createTokenWithCard(address: nil, successFunction: successToken, failureFunction: failToken)
 
 ```
 
