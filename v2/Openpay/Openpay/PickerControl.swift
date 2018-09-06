@@ -33,7 +33,6 @@ class PickerControl: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     public func generateDates(monthLocalized: String) {
         let date = Date()
         let calendar = Calendar.current
-        let currentMonth: Int = calendar.component(.month, from: date)
         let currentYear: Int = calendar.component(.year, from: date)
         var monthNames = monthLocalized.components(separatedBy: ",")
         var monthItems: [PickerItem] = []
@@ -46,7 +45,7 @@ class PickerControl: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             }
             
             for i in 0...14 {
-                var intYear = currentYear+i
+                let intYear = currentYear+i
                 yearItems.append( PickerItem(value:intYear, text: "\(intYear)") )
             }
             
