@@ -11,7 +11,7 @@ import UIKit
 import WebKit
 
 public class Openpay {
-    
+
     private static let API_URL_SANDBOX = "https://sandbox-api.openpay.mx"
     private static let API_URL_PRODUCTION = "https://api.openpay.mx"
     private static let API_VERSION = "1.1"
@@ -99,11 +99,11 @@ public class Openpay {
     }
     
     public func getTokenWithId(tokenId: String,
-                               successFunction: @escaping (_ responseParams: OPToken) -> Void,
-                               failureFunction: @escaping (_ error: NSError) -> Void ) {
+                        successFunction: @escaping (_ responseParams: OPToken) -> Void,
+                        failureFunction: @escaping (_ error: NSError) -> Void ) {
         
         sendFunction(method: String(format: "%@/%@",Openpay.OP_MODULE_TOKENS,tokenId), data: nil, httpMethod: Openpay.OP_HTTP_METHOD_GET, successFunction: successFunction, failureFunction: failureFunction)
-        
+
     }
     
     public func createDeviceSessionId(successFunction: @escaping (_ sessionId: String) -> Void,
@@ -137,10 +137,10 @@ public class Openpay {
     }
     
     private func sendFunction( method: String,
-                               data: Dictionary<String, Any>!,
-                               httpMethod: String,
-                               successFunction: @escaping (_ responseParams: OPToken) -> Void,
-                               failureFunction: @escaping (_ error: NSError) -> Void) {
+                       data: Dictionary<String, Any>!,
+                       httpMethod: String,
+                       successFunction: @escaping (_ responseParams: OPToken) -> Void,
+                       failureFunction: @escaping (_ error: NSError) -> Void) {
         
         var operationError: NSError!
         let urlPath: String = String(format: "%@/v1/%@/%@", ( isProductionMode == true ? Openpay.API_URL_PRODUCTION : Openpay.API_URL_SANDBOX ), self.merchantId, method)
@@ -199,11 +199,11 @@ public class Openpay {
                 failureFunction(operationError!)
             }
             
-            
+
         }
         
         task.resume()
-        
+
     }
     
     
@@ -226,18 +226,18 @@ public class Openpay {
         } catch {
             print("dictionaryFromJSONData Error: \(outError)")
         }
-        
+
         return jsonDictionary;
     }
-    
+
     
     
     
     public func loadCardForm(in viewController: UIViewController,
-                             successFunction: @escaping () -> Void,
-                             failureFunction: @escaping (_ error: NSError) -> Void,
-                             formTitle: String
-        ) {
+                                successFunction: @escaping () -> Void,
+                                failureFunction: @escaping (_ error: NSError) -> Void,
+                                formTitle: String
+                            ) {
         print("Display CardForm...")
         processCard = OPCard()
         cardView = CardView.instanceFromNib()
@@ -256,7 +256,7 @@ public class Openpay {
         
         let touch = UITapGestureRecognizer(target:self, action: #selector(touchView) )
         cardView.addGestureRecognizer(touch)
-        
+      
         // set actions for each button
         if let topItem = nav.navigationBar.topItem {
             topItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button.cancel", bundle: Bundle(for: Openpay.self), comment: "Cancel"),
@@ -316,7 +316,7 @@ public class Openpay {
         if let inView = self.cardViewController.view.viewWithTag(indexTag.inview.rawValue) as? CardView {
             self.inview = inView
         }
-        
+
     }
     
     
@@ -330,13 +330,16 @@ public class Openpay {
     }
     
     private func textFieldShouldReturn(textField: UITextField) {
-        let nextTage = textField.tag+1
+        let nextTage=textField.tag+1;
         if nextTage == indexTag.picker.rawValue {
             showDatePicker()
-        } else if let nextResponder = self.cardViewController.view.viewWithTag(nextTage) {
-            nextResponder.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
+        }else {
+            let nextResponder=self.cardViewController.view.viewWithTag(nextTage) as UIResponder!
+            if (nextResponder != nil){
+                nextResponder?.becomeFirstResponder()
+            } else {
+                textField.resignFirstResponder()
+            }
         }
     }
     
@@ -354,7 +357,7 @@ public class Openpay {
     }
     
     private func validateCharacters(textFieldToChange: UITextField) {
-        for chr in (textFieldToChange.text)! {
+        for chr in (textFieldToChange.text?.characters)! {
             if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") && !(chr >= " " && chr <= " ") ) {
                 textFieldToChange.deleteBackward()
             }
@@ -437,11 +440,11 @@ public class Openpay {
             segments = [4,8,12,16]
         }
         
-        var ci: Int = 0
-        var cp: Int = 0
-        for i in cleanNumber {
+        var ci: Int = 0;
+        var cp: Int = 0;
+        for i in cleanNumber.characters {
             if( segments[0] != 0 && cp == segments[ci] ) {
-                outNumber.append(separator)
+                outNumber.characters.append(separator)
                 if(segments.count > 1) {
                     if(ci < segments.count) {
                         ci += 1
@@ -450,7 +453,7 @@ public class Openpay {
                     }
                 }
             }
-            outNumber.append(i)
+            outNumber.characters.append(i)
             cp += 1
         }
         
@@ -464,11 +467,11 @@ public class Openpay {
         let min = 5
         validateCharacters(textFieldToChange: textField)
         processCard.holderName = textField.text!
-        holderValid = ((textField.text?.count)! > min && (textField.text?.count)! <= max)
+        holderValid = ((textField.text?.characters.count)! > min && (textField.text?.characters.count)! <= max)
         textField.textColor = holderValid ? UIColor.black : UIColor.red
-        if textField.text?.count == max && holderValid {
+        if textField.text?.characters.count == max && holderValid {
             textFieldShouldReturn(textField: textField)
-        } else if (textField.text?.count)! > max {
+        } else if (textField.text?.characters.count)! > max {
             textField.deleteBackward()
         }
         checkButtonCard()
@@ -480,7 +483,7 @@ public class Openpay {
         if processCard.numberValid {
             textFieldShouldReturn(textField: textField)
         }
-        if (textField.text?.count)! > max {
+        if (textField.text?.characters.count)! > max {
             textField.deleteBackward()
         }
         let formattedNumber = formatCardNumber(cardNumber: textField.text!, type: processCard.type)
@@ -495,7 +498,7 @@ public class Openpay {
         if cvvValid {
             textField.superview?.endEditing(true)
         }
-        if (textField.text?.count)! > max {
+        if (textField.text?.characters.count)! > max {
             textField.deleteBackward()
         }
         checkButtonCard()
@@ -516,9 +519,10 @@ public class Openpay {
                 processCard.expirationYear = String(format: "%02d", (year.value-2000))
                 dateField.setTitle(String(format: "%02d / %04d", month.value, year.value), for: UIControlState.normal)
                 checkButtonCard()
-                let nextTag = picker.tag+1
-                if let nextResponder = self.cardViewController.view.viewWithTag(nextTag) {
-                    nextResponder.becomeFirstResponder()
+                let nextTag = picker.tag+1;
+                let nextResponder = self.cardViewController.view.viewWithTag(nextTag) as UIResponder!
+                if (nextResponder != nil) {
+                    nextResponder?.becomeFirstResponder()
                 } else {
                     picker.resignFirstResponder()
                 }
@@ -538,10 +542,10 @@ public class Openpay {
         if let cvvField = self.cardViewController.view.viewWithTag(indexTag.cvv.rawValue) as? SecureUITextField {
             cvvField.textColor = (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) ? UIColor.black : UIColor.red
         }
-        
+
         let enabled = processCard.valid &&
-            (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) &&
-        holderValid
+                      (processCard.securityCodeCheck == OPCard.OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed) &&
+                      holderValid
         
         if let topItem = cardViewController.navigationController?.navigationBar.topItem {
             topItem.rightBarButtonItem?.isEnabled = enabled
