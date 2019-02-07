@@ -12,6 +12,8 @@ Please refer to the following documentation sections for field documentation:
 
 ## Requirements
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f8feb615e5c4e358fcda048bbb2ecb4)](https://app.codacy.com/app/openpay/openpay-swift-ios?utm_source=github.com&utm_medium=referral&utm_content=open-pay/openpay-swift-ios&utm_campaign=Badge_Grade_Settings)
+
 - iOS SDK 10.3+
 - ARC
 - WebKit.framework
