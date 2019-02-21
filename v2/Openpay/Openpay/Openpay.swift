@@ -552,6 +552,11 @@ public class Openpay {
         }
     }
     
+    deinit {
+        print("deinit: \(self)")
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
 }
 
 
