@@ -19,12 +19,16 @@ Please refer to the following documentation sections for field documentation:
 ## Installation
 
 - Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v.2.0.2/SDK-v2.0.2.zip).
-- Add openpay framework (Openpay.framework) to General -> Embeded Binaries.
+- Add openpay framework (Openpay.framework)
+	- Go to General -> Embedded Binaries
+	- Click "Add items"
 	- In the popup, click "Add Other..." option
-	- Select the file "Openpay.framework"
-	- Check the option "Copy items if needed"
-- Add webkit framework to General -> Linked Framework and Libraries.
-	- Search for "WebKit.framework", select it and click "add"
+	- Select the file "Openpay.framework" and click "Open"
+	- Check the option "Copy items if needed" and click "Finish"
+- Add webkit framework
+	- Go to General -> Linked Framework and Libraries
+	- Click "Add items"
+	- Search for "WebKit.framework", select it and click "Add"
 
 ## Usage
 
@@ -39,9 +43,14 @@ For create an instance Openpay needs:
 - Public API Key
 
 ```swift
+static let MERCHANT_ID = "merchantId"
+static let API_KEY = "apiKey"
+
 var openpay : Openpay!
 
-openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: false, isDebug: false)
+func myFunction() {
+	openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false)
+}
 ```
 
 #### Production Mode
@@ -51,7 +60,9 @@ Use isProductionMode = true
 ```swift
 var openpay : Openpay!
 
-openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
+func myFunction() {
+	openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: true, isDebug: false)
+}
 ```
 
 #### Create a SessionID
@@ -64,9 +75,18 @@ The following parameters are required:
 ```swift
 var openpay : Openpay!
 
-openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
+func myFunction() {
+        openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false)
+        openpay.createDeviceSessionId(successFunction: successSessionID, failureFunction: failSessionID)
+}
 
-openpay.createDeviceSessionId(successFunction: successSessionID, failureFunction: failSessionID)
+func successSessionID(sessionID: String) {
+        print("SessionID: \(sessionID)")
+}
+
+func failSessionID(error: NSError) {
+        print("\(error.code) - \(error.localizedDescription)")
+}
 ```
 
 #### Display Card Form
@@ -81,7 +101,18 @@ For display the form you need to pass the following parameters:
 ```swift
 var openpay : Openpay!
 
-openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
+func myFunction() {
+        openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false)
+        openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
+}
+
+func successCard() {
+
+}
+
+func failCard(error: NSError) {
+	print("\(error.code) - \(error.localizedDescription)")
+}
 ```
 
 #### Create a token
@@ -93,14 +124,24 @@ For more information about how to create a token, please refer to [Create a toke
 ```swift
 var openpay : Openpay!
 
-openpay = Openpay(withMerchantId: "Your Merchant ID", andApiKey: "Your Private Key", isProductionMode: true, isDebug: false)
+func myFunction() {
+        openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false)
+        openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
+}
 
-openpay.loadCardForm(in: self, successFunction: successCard, failureFunction: failCard, formTitle: "Openpay")
+func successCard() {
+	openpay.createTokenWithCard(address: nil, successFunction: successToken, failureFunction: failToken)
+}
 
-openpay.createTokenWithCard(address: nil, successFunction: successToken, failureFunction: failToken)
+func failCard(error: NSError) {
+	print("\(error.code) - \(error.localizedDescription)")
+}
 
+func successToken(token: OPToken) {
+        print("TokenID: \(token.id)")
+}
+
+func failToken(error: NSError) {
+        print("\(error.code) - \(error.localizedDescription)")
+}
 ```
-
-##### Response
-
-If the request is correct, return an instance of OPToken.
