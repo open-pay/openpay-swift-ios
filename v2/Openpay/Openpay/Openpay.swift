@@ -334,9 +334,8 @@ public class Openpay {
         if nextTage == indexTag.picker.rawValue {
             showDatePicker()
         }else {
-            let nextResponder=self.cardViewController.view.viewWithTag(nextTage) as UIResponder!
-            if (nextResponder != nil){
-                nextResponder?.becomeFirstResponder()
+            if let nextResponder = self.cardViewController.view.viewWithTag(nextTage) {
+                nextResponder.becomeFirstResponder()
             } else {
                 textField.resignFirstResponder()
             }
@@ -357,7 +356,7 @@ public class Openpay {
     }
     
     private func validateCharacters(textFieldToChange: UITextField) {
-        for chr in (textFieldToChange.text?.characters)! {
+        for chr in (textFieldToChange.text)! {
             if (!(chr >= "a" && chr <= "z") && !(chr >= "A" && chr <= "Z") && !(chr >= " " && chr <= " ") ) {
                 textFieldToChange.deleteBackward()
             }
@@ -442,9 +441,9 @@ public class Openpay {
         
         var ci: Int = 0;
         var cp: Int = 0;
-        for i in cleanNumber.characters {
+        for i in cleanNumber {
             if( segments[0] != 0 && cp == segments[ci] ) {
-                outNumber.characters.append(separator)
+                outNumber.append(separator)
                 if(segments.count > 1) {
                     if(ci < segments.count) {
                         ci += 1
@@ -453,7 +452,7 @@ public class Openpay {
                     }
                 }
             }
-            outNumber.characters.append(i)
+            outNumber.append(i)
             cp += 1
         }
         
@@ -467,11 +466,11 @@ public class Openpay {
         let min = 5
         validateCharacters(textFieldToChange: textField)
         processCard.holderName = textField.text!
-        holderValid = ((textField.text?.characters.count)! > min && (textField.text?.characters.count)! <= max)
+        holderValid = ((textField.text?.count)! > min && (textField.text?.count)! <= max)
         textField.textColor = holderValid ? UIColor.black : UIColor.red
-        if textField.text?.characters.count == max && holderValid {
+        if textField.text?.count == max && holderValid {
             textFieldShouldReturn(textField: textField)
-        } else if (textField.text?.characters.count)! > max {
+        } else if (textField.text?.count)! > max {
             textField.deleteBackward()
         }
         checkButtonCard()
@@ -483,7 +482,7 @@ public class Openpay {
         if processCard.numberValid {
             textFieldShouldReturn(textField: textField)
         }
-        if (textField.text?.characters.count)! > max {
+        if (textField.text?.count)! > max {
             textField.deleteBackward()
         }
         let formattedNumber = formatCardNumber(cardNumber: textField.text!, type: processCard.type)
@@ -498,7 +497,7 @@ public class Openpay {
         if cvvValid {
             textField.superview?.endEditing(true)
         }
-        if (textField.text?.characters.count)! > max {
+        if (textField.text?.count)! > max {
             textField.deleteBackward()
         }
         checkButtonCard()
@@ -520,9 +519,8 @@ public class Openpay {
                 dateField.setTitle(String(format: "%02d / %04d", month.value, year.value), for: UIControlState.normal)
                 checkButtonCard()
                 let nextTag = picker.tag+1;
-                let nextResponder = self.cardViewController.view.viewWithTag(nextTag) as UIResponder!
-                if (nextResponder != nil) {
-                    nextResponder?.becomeFirstResponder()
+                if let nextResponder = self.cardViewController.view.viewWithTag(nextTag) {
+                    nextResponder.becomeFirstResponder()
                 } else {
                     picker.resignFirstResponder()
                 }

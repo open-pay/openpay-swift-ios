@@ -59,7 +59,7 @@ public class OPCard {
         let currentYear: Int = calendar.component(.year, from: date)
         
         var year: Int = Int(self.expirationYear)!
-        if ( expirationYear.characters.count <= 2) {
+        if ( expirationYear.count <= 2) {
             year += 2000;
         }
         
@@ -71,7 +71,7 @@ public class OPCard {
     public var type: OPCardType {
         
         let cleanNumber = number.replacingOccurrences(of: " ", with: "")
-        if ( cleanNumber == "" || (cleanNumber.characters.count < 2)) {
+        if ( cleanNumber == "" || (cleanNumber.count < 2)) {
             return OPCardType.OPCardTypeUnknown;
         }
         
@@ -90,13 +90,16 @@ public class OPCard {
 
     public var numberValid: Bool {
         let cleanNumber = number.replacingOccurrences(of: " ", with: "")
-        if ( cleanNumber == "" ) { return false; }
-        if ( self.number.characters.count < 12 ) { return false; }
         
-        var odd: Bool = true;
-        var total: Int = 0;
+        if ( cleanNumber == "" ) { return false }
+        if ( cleanNumber.count < 15 ) { return false }
+        if ( (type == .OPCardTypeVisa || type == .OPCardTypeMastercard) && cleanNumber.count < 16) {
+            return false
+        }
+        var odd: Bool = true
+        var total: Int = 0
         
-        for i in stride(from: number.characters.count-1, to: -1, by: -1) {
+        for i in stride(from: number.count-1, to: -1, by: -1) {
             let start = number.index(number.startIndex, offsetBy: i)
             let end = number.index(number.startIndex, offsetBy: i+1)
             let range = start..<end
@@ -131,7 +134,7 @@ public class OPCard {
             return OPCardSecurityCodeCheck.OPCardSecurityCodeCheckUnknown;
         }else{
             let requiredLength = (self.type==OPCardType.OPCardTypeAmericanExpress) ? 4 : 3;
-            if ( self.cvv2.characters.count == requiredLength) {
+            if ( self.cvv2.count == requiredLength) {
                 return OPCardSecurityCodeCheck.OPCardSecurityCodeCheckPassed;
             }
             else {
