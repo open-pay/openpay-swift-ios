@@ -1,0 +1,11 @@
+framework module Openpay {
+  umbrella header "Openpay.h"
+
+  export *
+  module * { export * }
+}
+
+module Openpay.Swift {
+    header "Openpay-Swift.h"
+    requires objc
+}
