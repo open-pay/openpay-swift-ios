@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		262EFE702283F7FB00EADE58 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3804C71FD870090064F0B8 /* WebKit.framework */; };
-		26FA14EB229DDF1800B83532 /* Openpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA14EA229DDF1800B83532 /* Openpay.framework */; };
-		26FA14EC229DDF1800B83532 /* Openpay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA14EA229DDF1800B83532 /* Openpay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26E13C32229F837000EDC83B /* Openpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E13C31229F837000EDC83B /* Openpay.framework */; };
+		26E13C33229F837000EDC83B /* Openpay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26E13C31229F837000EDC83B /* Openpay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7255A4D21DAC522E00198851 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7255A4D41DAC522E00198851 /* Localizable.strings */; };
 		7270A4F41DA61C1C00B49B5F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7270A4F31DA61C1C00B49B5F /* logo.png */; };
 		7270A4F61DA6A3EE00B49B5F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270A4F51DA6A3EE00B49B5F /* ResultViewController.swift */; };
@@ -21,13 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		26FA14ED229DDF1800B83532 /* Embed Frameworks */ = {
+		26E13C30229F834800EDC83B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				26FA14EC229DDF1800B83532 /* Openpay.framework in Embed Frameworks */,
+				26E13C33229F837000EDC83B /* Openpay.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		26FA14EA229DDF1800B83532 /* Openpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Openpay.framework; sourceTree = "<group>"; };
+		26E13C31229F837000EDC83B /* Openpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Openpay.framework; sourceTree = "<group>"; };
 		7255A4B81DAC061B00198851 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
 		7255A4B91DAC061B00198851 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		7255A4BB1DAC076800198851 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				262EFE702283F7FB00EADE58 /* WebKit.framework in Frameworks */,
-				26FA14EB229DDF1800B83532 /* Openpay.framework in Frameworks */,
+				26E13C32229F837000EDC83B /* Openpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 		729190D41DA4496800C0CD07 = {
 			isa = PBXGroup;
 			children = (
-				26FA14EA229DDF1800B83532 /* Openpay.framework */,
+				26E13C31229F837000EDC83B /* Openpay.framework */,
 				729190DF1DA4496800C0CD07 /* OpenpayExample */,
 				729190DE1DA4496800C0CD07 /* Products */,
 				CE3804C61FD870090064F0B8 /* Frameworks */,
@@ -122,7 +122,7 @@
 				729190D91DA4496800C0CD07 /* Sources */,
 				729190DA1DA4496800C0CD07 /* Frameworks */,
 				729190DB1DA4496800C0CD07 /* Resources */,
-				26FA14ED229DDF1800B83532 /* Embed Frameworks */,
+				26E13C30229F834800EDC83B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
