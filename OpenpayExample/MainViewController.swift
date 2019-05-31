@@ -140,7 +140,7 @@ class MainViewController: UIViewController {
             showBlackBox(show: false)
             if let resultController = storyboard!.instantiateViewController(withIdentifier: "ResultController") as? ResultViewController {
                 present(resultController, animated: true, completion: nil)
-                resultController.textBox.text = String(format: NSLocalizedString("token.success", bundle: Bundle.main, comment: "Error JSON"), sessionID, token.id)
+                resultController.textBox.text = String(format: NSLocalizedString("token.success", bundle: Bundle.main, comment: "Success JSON"), sessionID, token.id)
             }
         }
     }
