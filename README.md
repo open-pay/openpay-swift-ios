@@ -2,7 +2,7 @@
 
 iOS swift library for tokenizing credit/debit card and collect device information
 
-Current version: v2.0.7
+Current version: v2.0.8
 
 Looking for Objective-C Version? Checkout: (https://github.com/open-pay/openpay-ios)
 
@@ -18,7 +18,7 @@ Please refer to the following documentation sections for field documentation:
 
 ## Installation
 
-- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v2.0.7/SDK-v2.0.7.zip).
+- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v2.0.8/SDK-v2.0.8.zip).
 - Add openpay framework (Openpay.framework)
 	- Go to General -> Embedded Binaries
 	- Click "Add items"
