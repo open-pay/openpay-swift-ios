@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Openpay-Swift.h</key>
 		<data>
-		oIEnVaLFlJriFWzBdHmdw7LI/Nc=
+		8DIv2gv7AiOAXRCNJ6xFWDIM964=
 		</data>
 		<key>Headers/Openpay.h</key>
 		<data>
@@ -14,23 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WJYxwPhHVJZq9af7ImQVt/SMOyo=
+		yevbcST2c6VOsnx4dtv45oks+Gs=
+		</data>
+		<key>Modules/Openpay.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		OdX4YipviaQTvZY/JpwEMbUPH2k=
+		</data>
+		<key>Modules/Openpay.swiftmodule/Project/i386.swiftsourceinfo</key>
+		<data>
+		OdX4YipviaQTvZY/JpwEMbUPH2k=
+		</data>
+		<key>Modules/Openpay.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		OGMKU2KNIHbLbKhaD6ehCBLBZMI=
+		</data>
+		<key>Modules/Openpay.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<data>
+		OGMKU2KNIHbLbKhaD6ehCBLBZMI=
+		</data>
+		<key>Modules/Openpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<data>
+		gMRk9XwzWVBzlqF09RgMIzlMaNc=
+		</data>
+		<key>Modules/Openpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<data>
+		r7xKaJVnpNyvB9ot/VMrJxYSsnA=
 		</data>
 		<key>Modules/Openpay.swiftmodule/i386.swiftdoc</key>
 		<data>
-		HuMVn99Cl03XOFharI3hkec97e4=
+		gMRk9XwzWVBzlqF09RgMIzlMaNc=
 		</data>
 		<key>Modules/Openpay.swiftmodule/i386.swiftmodule</key>
 		<data>
-		hVJDnOQRejc8j4ruchaAu8OMuVw=
+		r7xKaJVnpNyvB9ot/VMrJxYSsnA=
+		</data>
+		<key>Modules/Openpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		QuTdDspqWaDHY1cxUIbefjR4NZU=
+		</data>
+		<key>Modules/Openpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		ymy1B4w6BFi2tch/FsEKzKlaTQc=
 		</data>
 		<key>Modules/Openpay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		0Nfhtvv8EcZS+2vR3yjsnn5+Sbg=
+		QuTdDspqWaDHY1cxUIbefjR4NZU=
 		</data>
 		<key>Modules/Openpay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Lb2OPIuzKRhzhpzfSEJvRqiCE5E=
+		ymy1B4w6BFi2tch/FsEKzKlaTQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -40,7 +72,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UI1faHcasWoTClWFWyXZd7nBK34=
+			elYkEVK8s/ah+B14d88Z5D4Wtl8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -58,7 +90,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9B7+q1/8yD+u3WZRpIiM6G/rffM=
+			ArfevI8Vvx1Eusuug5dJJqGvElg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -76,7 +108,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kfD6kpjF1eI7s8jVLrSKJW9fwpM=
+			d3QD1aBRdlDutdKxcE9WFflDPTw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -97,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oIEnVaLFlJriFWzBdHmdw7LI/Nc=
+			8DIv2gv7AiOAXRCNJ6xFWDIM964=
 			</data>
 			<key>hash2</key>
 			<data>
-			tz97dLPEDwUEXPzrAVPTg+0csXS9LcBlFSjR7Z7PfgM=
+			BJWthqxJIz/YlEfWAYN/bLcbiEiopdVHTsRlPEorbsM=
 			</data>
 		</dict>
 		<key>Headers/Openpay.h</key>
@@ -115,48 +147,136 @@
 			JQ7wjmp0fbB+HF/SCOps6fPX8pI6HDjwHWayKXjoLAE=
 			</data>
 		</dict>
+		<key>Modules/Openpay.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OdX4YipviaQTvZY/JpwEMbUPH2k=
+			</data>
+			<key>hash2</key>
+			<data>
+			At58Fcs+LXi78SoJx5pBgXwOuv5Ky5fPMo2yF1175QY=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/Project/i386.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OdX4YipviaQTvZY/JpwEMbUPH2k=
+			</data>
+			<key>hash2</key>
+			<data>
+			At58Fcs+LXi78SoJx5pBgXwOuv5Ky5fPMo2yF1175QY=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OGMKU2KNIHbLbKhaD6ehCBLBZMI=
+			</data>
+			<key>hash2</key>
+			<data>
+			2QjLOK6u4vbNkWCxKlybaaRPdsUXTEmioKTE22yypME=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/Project/x86_64.swiftsourceinfo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OGMKU2KNIHbLbKhaD6ehCBLBZMI=
+			</data>
+			<key>hash2</key>
+			<data>
+			2QjLOK6u4vbNkWCxKlybaaRPdsUXTEmioKTE22yypME=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gMRk9XwzWVBzlqF09RgMIzlMaNc=
+			</data>
+			<key>hash2</key>
+			<data>
+			1D2KFfwtTe4ivC3otCgsYltZHhlG5wBegA3twEUS0uY=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r7xKaJVnpNyvB9ot/VMrJxYSsnA=
+			</data>
+			<key>hash2</key>
+			<data>
+			McA126t9vO92+Ly73jCFLad8yWlMrSk4iCUGGtCudF0=
+			</data>
+		</dict>
 		<key>Modules/Openpay.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HuMVn99Cl03XOFharI3hkec97e4=
+			gMRk9XwzWVBzlqF09RgMIzlMaNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			xTcT8JQL7624QmceIasllqDnOA/HqK2BIznwsUcPtmk=
+			1D2KFfwtTe4ivC3otCgsYltZHhlG5wBegA3twEUS0uY=
 			</data>
 		</dict>
 		<key>Modules/Openpay.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hVJDnOQRejc8j4ruchaAu8OMuVw=
+			r7xKaJVnpNyvB9ot/VMrJxYSsnA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IesgOT18xrzzTRU5tTPWVJsntyH1UTUY6kw+t6NuIAA=
+			McA126t9vO92+Ly73jCFLad8yWlMrSk4iCUGGtCudF0=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QuTdDspqWaDHY1cxUIbefjR4NZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			s0507g/2DHWreNefIWEVcQbmXqQDIM9ZnRSZBLlQYU0=
+			</data>
+		</dict>
+		<key>Modules/Openpay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ymy1B4w6BFi2tch/FsEKzKlaTQc=
+			</data>
+			<key>hash2</key>
+			<data>
+			rAPo6ekQWiq7tDacp62AdIZyDg9t9Pzhyim8raG+/A4=
 			</data>
 		</dict>
 		<key>Modules/Openpay.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0Nfhtvv8EcZS+2vR3yjsnn5+Sbg=
+			QuTdDspqWaDHY1cxUIbefjR4NZU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4X5Q2vHto5iFPzHq57hQ+6kCNI04x7N46d8Ajgfpxzk=
+			s0507g/2DHWreNefIWEVcQbmXqQDIM9ZnRSZBLlQYU0=
 			</data>
 		</dict>
 		<key>Modules/Openpay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Lb2OPIuzKRhzhpzfSEJvRqiCE5E=
+			ymy1B4w6BFi2tch/FsEKzKlaTQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sjwj7VkkMEXL13x8Hw1shmJDpIfrWR2iYj3QcG8LNZc=
+			rAPo6ekQWiq7tDacp62AdIZyDg9t9Pzhyim8raG+/A4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UI1faHcasWoTClWFWyXZd7nBK34=
+			elYkEVK8s/ah+B14d88Z5D4Wtl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			mI8GZr51/vNgXtg32wROOR3BDk2ErF6drLDZXhd9ros=
+			+s9W9/IOJ+yj5ZwkVZqOo6Gh0wnCU43LVW7UBAdcKak=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -200,11 +320,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9B7+q1/8yD+u3WZRpIiM6G/rffM=
+			ArfevI8Vvx1Eusuug5dJJqGvElg=
 			</data>
 			<key>hash2</key>
 			<data>
-			V1PIeobA4SY96jl8xdRtJF63lFPaJFxYZEtWplhnj4M=
+			LPNvmTqgc3SpDIn4hFTY0Q1eYBblITZejZ8jCFUYSc4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -226,11 +346,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kfD6kpjF1eI7s8jVLrSKJW9fwpM=
+			d3QD1aBRdlDutdKxcE9WFflDPTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			4ELG5GKPvZw2GCl6baBsF8pp1uBq02Gh+jRDeQBHdaI=
+			oRZxujY+4Dv9Ur7ZQzgFckYrNjeNSe/stp8j4vY+Pl8=
 			</data>
 			<key>optional</key>
 			<true/>
