@@ -1,7 +1,12 @@
+
 ![Openpay iOS](http://www.openpay.mx/img/github/ios.jpg)
 
-iOS swift library for tokenizing credit/debit card and collect device information
+![No Maintenance Intended](http://unmaintained.tech/badge.svg)
+```
+DEPRECATED`⛔️`
+Please use our Swift library instead: https://github.com/open-pay/openpay-swift-ios
 
+iOS swift library for tokenizing credit/debit card and collect device information
 Current version: v2.0.12
 
 Looking for Objective-C Version? Checkout: (https://github.com/open-pay/openpay-ios)
