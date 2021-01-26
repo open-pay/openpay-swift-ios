@@ -2,33 +2,34 @@
 //  ResultViewController.swift
 //  OpenpayExample
 //
-//  Created by Israel Grijalva Correa on 10/6/16.
-//  Copyright © 2016 Openpay. All rights reserved.
+//  Created by Carlos Hernandez Perez on 25/01/21.
 //
 
 import UIKit
-import Openpay
 
 class ResultViewController: UIViewController {
     
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var textBox: UITextView!
-    
+    var cardTokenId:String?
+
+    @IBOutlet weak var cardTokenIdLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
-    @IBAction func backAction(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil);
+
+        // Do any additional setup after loading the view.
+        
+        cardTokenIdLabel.text = cardTokenId
     }
     
 
-    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
-
