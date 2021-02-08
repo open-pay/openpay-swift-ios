@@ -22,8 +22,10 @@ class DetailViewController: UIViewController,CardTokenComplete {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
+        // Init library
         openpay = Openpay(withMerchantId: DetailViewController.MERCHANT_ID, andApiKey: DetailViewController.API_KEY, isProductionMode: false, isDebug: true)
         
+        // Get session id
         openpay.createDeviceSessionId(successFunction: successSessionID, failureFunction: failSessionID)
 
     }
@@ -48,6 +50,8 @@ class DetailViewController: UIViewController,CardTokenComplete {
             "state":"Querétaro",
             "country_code":"MX"
         ]
+        
+        // create token with card info from default form
         openpay.createTokenWithCard(address: OPAddress(with: addressDictionary), successFunction: successToken, failureFunction: failToken)
     }
     

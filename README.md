@@ -3,7 +3,7 @@
 
 
 iOS swift library for tokenizing credit/debit card and collect device information
-Current version: v2.0.13
+Current version: v3.0.0
 
 
 Please refer to the following documentation sections for field documentation:
@@ -12,28 +12,21 @@ Please refer to the following documentation sections for field documentation:
 
 ## Requirements
 
-- iOS SDK 10.3+
-- ARC
-- WebKit.framework
+- iOS SDK 14.3+
 
 ## Installation
 
 - Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v2.0.13/SDK-V2.0.13.zip).
 - Add openpay framework (Openpay.framework)
-	- Go to General -> Embedded Binaries
-	- Click "Add items"
-	- In the popup, click "Add Other..." option
-	- Select the file "Openpay.framework" and click "Open"
-	- Check the option "Copy items if needed" and click "Finish"
-- Add webkit framework
-	- Go to General -> Linked Framework and Libraries
-	- Click "Add items"
-	- Search for "WebKit.framework", select it and click "Add"
+  - Drag & drop the framework library to your workspace
+  - Go to General -> Frameworks, Libraries, and Embedded Content and verify that the framework was added. Also set Embed & Sign 
+	to the Embed option.
+
 
 ## Usage
 
 ```swift
-import Openpay
+import OpenpayKit
 ```
 
 #### Create a instance object
@@ -146,27 +139,40 @@ func failToken(error: NSError) {
 }
 ```
 
-## Remove Unused Architectures (for production only and if u use SDK <= v2.0.3)
+## Remove Unused Architectures
 
 The universal framework will run on both simulators and devices. But there is a problem, Apple doesn’t allow to upload the application with unused architectures to the App Store.
 
-Please make sure that you have "Remove Unused Architectures Script" added in your project while releasing your app to App Store.
+Please make sure that you have "Remove Unused Architectures Script" added in your project.
 
 - Select the Project -> Choose Target -> Project Name -> Select Build Phases -> Press "+" -> New Run Script Phase -> Name the script as "Remove Unused Architectures Script".
 
-```javascript
-FRAMEWORK="Openpay"
-FRAMEWORK_EXECUTABLE_PATH="${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/$FRAMEWORK.framework/$FRAMEWORK"
+Be sure that this Build Phase is the last one
+
+```
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+# This script loops through the frameworks embedded in the application and 
+# removes unused architectures.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
 EXTRACTED_ARCHS=()
 for ARCH in $ARCHS
 do
+echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
 lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
 EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
 done
+echo "Merging extracted architectures: ${ARCHS}"
 lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
 rm "${EXTRACTED_ARCHS[@]}"
+echo "Replacing original executable with thinned version"
 rm "$FRAMEWORK_EXECUTABLE_PATH"
 mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+done
+
 ```
 
-Thats all !. This run script removes the unused simulator architectures only while pushing the application to the App Store.
+Thats all !. 

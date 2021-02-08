@@ -29,6 +29,9 @@ class CustomFormViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -43,8 +46,10 @@ class CustomFormViewController: UIViewController {
      */
     
     @IBAction func doPayment(_ sender: Any) {
-        
+        // create model from form
         let card = TokenizeCardRequest(cardNumber: cardNumberForm.text!,holderName:nameForm.text!, expirationYear: expYearCardForm.text!, expirationMonth: expMonthCardForm.text!, cvv2: cvvCardForm.text!)
+        
+        // request token by card model
         openpay.tokenizeCard(card: card) { (OPToken) in
             print(OPToken.id)
             DispatchQueue.main.sync() {
