@@ -3,31 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262EFE702283F7FB00EADE58 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3804C71FD870090064F0B8 /* WebKit.framework */; };
-		26CDAFFC22A1C82900632359 /* Openpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDAFFB22A1C82900632359 /* Openpay.framework */; };
-		26CDAFFD22A1C82900632359 /* Openpay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26CDAFFB22A1C82900632359 /* Openpay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7255A4D21DAC522E00198851 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7255A4D41DAC522E00198851 /* Localizable.strings */; };
-		7270A4F41DA61C1C00B49B5F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7270A4F31DA61C1C00B49B5F /* logo.png */; };
-		7270A4F61DA6A3EE00B49B5F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7270A4F51DA6A3EE00B49B5F /* ResultViewController.swift */; };
-		729190E11DA4496800C0CD07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729190E01DA4496800C0CD07 /* AppDelegate.swift */; };
-		729190E31DA4496800C0CD07 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729190E21DA4496800C0CD07 /* MainViewController.swift */; };
-		729190E61DA4496800C0CD07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729190E41DA4496800C0CD07 /* Main.storyboard */; };
-		729190E81DA4496800C0CD07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729190E71DA4496800C0CD07 /* Assets.xcassets */; };
-		729190EB1DA4496800C0CD07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729190E91DA4496800C0CD07 /* LaunchScreen.storyboard */; };
+		2D20F44725BB9CFC00269CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F44625BB9CFC00269CD9 /* AppDelegate.swift */; };
+		2D20F44925BB9CFC00269CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F44825BB9CFC00269CD9 /* SceneDelegate.swift */; };
+		2D20F44B25BB9CFC00269CD9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F44A25BB9CFC00269CD9 /* RootViewController.swift */; };
+		2D20F44E25BB9CFC00269CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D20F44C25BB9CFC00269CD9 /* Main.storyboard */; };
+		2D20F45025BB9CFE00269CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D20F44F25BB9CFE00269CD9 /* Assets.xcassets */; };
+		2D20F45325BB9CFE00269CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D20F45125BB9CFE00269CD9 /* LaunchScreen.storyboard */; };
+		2D20F45E25BB9CFE00269CD9 /* OpenpayExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F45D25BB9CFE00269CD9 /* OpenpayExampleTests.swift */; };
+		2D20F46925BB9CFE00269CD9 /* OpenpayExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F46825BB9CFE00269CD9 /* OpenpayExampleUITests.swift */; };
+		2D20F47D25BBAADB00269CD9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F47C25BBAADB00269CD9 /* DetailViewController.swift */; };
+		2D20F4EF25BE94E200269CD9 /* CustomFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */; };
+		2D4BE42D25BF9129007D2E63 /* CardTokenComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */; };
+		2D4BE43125BF93B4007D2E63 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */; };
+		2DDE41AF25C0C80C00188C56 /* OpenpayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */; };
+		2DDE41B025C0C80C00188C56 /* OpenpayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2D20F45A25BB9CFE00269CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D20F43B25BB9CFC00269CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D20F44225BB9CFC00269CD9;
+			remoteInfo = OpenpayExample;
+		};
+		2D20F46525BB9CFE00269CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D20F43B25BB9CFC00269CD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D20F44225BB9CFC00269CD9;
+			remoteInfo = OpenpayExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		26CDAFFE22A1C82900632359 /* Embed Frameworks */ = {
+		2DDE41B125C0C80C00188C56 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				26CDAFFD22A1C82900632359 /* Openpay.framework in Embed Frameworks */,
+				2DDE41B025C0C80C00188C56 /* OpenpayKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,79 +55,116 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		26CDAFFB22A1C82900632359 /* Openpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Openpay.framework; sourceTree = "<group>"; };
-		7255A4B81DAC061B00198851 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
-		7255A4B91DAC061B00198851 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		7255A4BB1DAC076800198851 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		7255A4BC1DAC076800198851 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
-		7255A4D31DAC522E00198851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
-		7255A4D51DAC523500198851 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7255A4D61DAC523800198851 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		7255A4D71DAC523900198851 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		7270A4F31DA61C1C00B49B5F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		7270A4F51DA6A3EE00B49B5F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		729190DD1DA4496800C0CD07 /* OpenpayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenpayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		729190E01DA4496800C0CD07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		729190E21DA4496800C0CD07 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		729190E51DA4496800C0CD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		729190E71DA4496800C0CD07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		729190EA1DA4496800C0CD07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		729190EC1DA4496800C0CD07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE3804C71FD870090064F0B8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2D20F44325BB9CFC00269CD9 /* OpenpayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenpayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D20F44625BB9CFC00269CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D20F44825BB9CFC00269CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D20F44A25BB9CFC00269CD9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2D20F44D25BB9CFC00269CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D20F44F25BB9CFE00269CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D20F45225BB9CFE00269CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D20F45425BB9CFE00269CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D20F45925BB9CFE00269CD9 /* OpenpayExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenpayExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D20F45D25BB9CFE00269CD9 /* OpenpayExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenpayExampleTests.swift; sourceTree = "<group>"; };
+		2D20F45F25BB9CFE00269CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D20F46425BB9CFE00269CD9 /* OpenpayExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenpayExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D20F46825BB9CFE00269CD9 /* OpenpayExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenpayExampleUITests.swift; sourceTree = "<group>"; };
+		2D20F46A25BB9CFE00269CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D20F47C25BBAADB00269CD9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2D20F4B525BE87F100269CD9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormViewController.swift; sourceTree = "<group>"; };
+		2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTokenComplete.swift; sourceTree = "<group>"; };
+		2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenpayKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		729190DA1DA4496800C0CD07 /* Frameworks */ = {
+		2D20F44025BB9CFC00269CD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262EFE702283F7FB00EADE58 /* WebKit.framework in Frameworks */,
-				26CDAFFC22A1C82900632359 /* Openpay.framework in Frameworks */,
+				2DDE41AF25C0C80C00188C56 /* OpenpayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F45625BB9CFE00269CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F46125BB9CFE00269CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		729190D41DA4496800C0CD07 = {
+		2D20F43A25BB9CFC00269CD9 = {
 			isa = PBXGroup;
 			children = (
-				26CDAFFB22A1C82900632359 /* Openpay.framework */,
-				729190DF1DA4496800C0CD07 /* OpenpayExample */,
-				729190DE1DA4496800C0CD07 /* Products */,
-				CE3804C61FD870090064F0B8 /* Frameworks */,
+				2D20F44525BB9CFC00269CD9 /* OpenpayExample */,
+				2D20F45C25BB9CFE00269CD9 /* OpenpayExampleTests */,
+				2D20F46725BB9CFE00269CD9 /* OpenpayExampleUITests */,
+				2D20F44425BB9CFC00269CD9 /* Products */,
+				2D20F4B425BE87F100269CD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		729190DE1DA4496800C0CD07 /* Products */ = {
+		2D20F44425BB9CFC00269CD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				729190DD1DA4496800C0CD07 /* OpenpayExample.app */,
+				2D20F44325BB9CFC00269CD9 /* OpenpayExample.app */,
+				2D20F45925BB9CFE00269CD9 /* OpenpayExampleTests.xctest */,
+				2D20F46425BB9CFE00269CD9 /* OpenpayExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		729190DF1DA4496800C0CD07 /* OpenpayExample */ = {
+		2D20F44525BB9CFC00269CD9 /* OpenpayExample */ = {
 			isa = PBXGroup;
 			children = (
-				729190E01DA4496800C0CD07 /* AppDelegate.swift */,
-				729190E21DA4496800C0CD07 /* MainViewController.swift */,
-				7270A4F51DA6A3EE00B49B5F /* ResultViewController.swift */,
-				729190E41DA4496800C0CD07 /* Main.storyboard */,
-				729190E71DA4496800C0CD07 /* Assets.xcassets */,
-				729190E91DA4496800C0CD07 /* LaunchScreen.storyboard */,
-				7270A4F31DA61C1C00B49B5F /* logo.png */,
-				729190EC1DA4496800C0CD07 /* Info.plist */,
-				7255A4D41DAC522E00198851 /* Localizable.strings */,
+				2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */,
+				2D20F44625BB9CFC00269CD9 /* AppDelegate.swift */,
+				2D20F44825BB9CFC00269CD9 /* SceneDelegate.swift */,
+				2D20F44A25BB9CFC00269CD9 /* RootViewController.swift */,
+				2D20F44C25BB9CFC00269CD9 /* Main.storyboard */,
+				2D20F44F25BB9CFE00269CD9 /* Assets.xcassets */,
+				2D20F45125BB9CFE00269CD9 /* LaunchScreen.storyboard */,
+				2D20F45425BB9CFE00269CD9 /* Info.plist */,
+				2D20F47C25BBAADB00269CD9 /* DetailViewController.swift */,
+				2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */,
+				2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */,
+				2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */,
 			);
-			name = OpenpayExample;
-			path = OpenPayExample;
+			path = OpenpayExample;
 			sourceTree = "<group>";
 		};
-		CE3804C61FD870090064F0B8 /* Frameworks */ = {
+		2D20F45C25BB9CFE00269CD9 /* OpenpayExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE3804C71FD870090064F0B8 /* WebKit.framework */,
+				2D20F45D25BB9CFE00269CD9 /* OpenpayExampleTests.swift */,
+				2D20F45F25BB9CFE00269CD9 /* Info.plist */,
+			);
+			path = OpenpayExampleTests;
+			sourceTree = "<group>";
+		};
+		2D20F46725BB9CFE00269CD9 /* OpenpayExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D20F46825BB9CFE00269CD9 /* OpenpayExampleUITests.swift */,
+				2D20F46A25BB9CFE00269CD9 /* Info.plist */,
+			);
+			path = OpenpayExampleUITests;
+			sourceTree = "<group>";
+		};
+		2D20F4B425BE87F100269CD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D20F4B525BE87F100269CD9 /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,116 +172,210 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		729190DC1DA4496800C0CD07 /* OpenpayExample */ = {
+		2D20F44225BB9CFC00269CD9 /* OpenpayExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 729191051DA4496800C0CD07 /* Build configuration list for PBXNativeTarget "OpenpayExample" */;
+			buildConfigurationList = 2D20F46D25BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExample" */;
 			buildPhases = (
-				729190D91DA4496800C0CD07 /* Sources */,
-				729190DA1DA4496800C0CD07 /* Frameworks */,
-				729190DB1DA4496800C0CD07 /* Resources */,
-				26CDAFFE22A1C82900632359 /* Embed Frameworks */,
+				2D20F43F25BB9CFC00269CD9 /* Sources */,
+				2D20F44025BB9CFC00269CD9 /* Frameworks */,
+				2D20F44125BB9CFC00269CD9 /* Resources */,
+				2DDE41B125C0C80C00188C56 /* Embed Frameworks */,
+				2D642A1525C07FD1006DA023 /* Remove unused architectures */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = OpenpayExample;
-			productName = OpenPayExample;
-			productReference = 729190DD1DA4496800C0CD07 /* OpenpayExample.app */;
+			productName = OpenpayExample;
+			productReference = 2D20F44325BB9CFC00269CD9 /* OpenpayExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2D20F45825BB9CFE00269CD9 /* OpenpayExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D20F47025BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExampleTests" */;
+			buildPhases = (
+				2D20F45525BB9CFE00269CD9 /* Sources */,
+				2D20F45625BB9CFE00269CD9 /* Frameworks */,
+				2D20F45725BB9CFE00269CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D20F45B25BB9CFE00269CD9 /* PBXTargetDependency */,
+			);
+			name = OpenpayExampleTests;
+			productName = OpenpayExampleTests;
+			productReference = 2D20F45925BB9CFE00269CD9 /* OpenpayExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D20F46325BB9CFE00269CD9 /* OpenpayExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D20F47325BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExampleUITests" */;
+			buildPhases = (
+				2D20F46025BB9CFE00269CD9 /* Sources */,
+				2D20F46125BB9CFE00269CD9 /* Frameworks */,
+				2D20F46225BB9CFE00269CD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D20F46625BB9CFE00269CD9 /* PBXTargetDependency */,
+			);
+			name = OpenpayExampleUITests;
+			productName = OpenpayExampleUITests;
+			productReference = 2D20F46425BB9CFE00269CD9 /* OpenpayExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		729190D51DA4496800C0CD07 /* Project object */ = {
+		2D20F43B25BB9CFC00269CD9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = Openpay;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					729190DC1DA4496800C0CD07 = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+					2D20F44225BB9CFC00269CD9 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2D20F45825BB9CFE00269CD9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2D20F44225BB9CFC00269CD9;
+					};
+					2D20F46325BB9CFE00269CD9 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2D20F44225BB9CFC00269CD9;
 					};
 				};
 			};
-			buildConfigurationList = 729190D81DA4496800C0CD07 /* Build configuration list for PBXProject "OpenpayExample" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = 2D20F43E25BB9CFC00269CD9 /* Build configuration list for PBXProject "OpenpayExample" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				es,
-				"es-MX",
 			);
-			mainGroup = 729190D41DA4496800C0CD07;
-			productRefGroup = 729190DE1DA4496800C0CD07 /* Products */;
+			mainGroup = 2D20F43A25BB9CFC00269CD9;
+			productRefGroup = 2D20F44425BB9CFC00269CD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				729190DC1DA4496800C0CD07 /* OpenpayExample */,
+				2D20F44225BB9CFC00269CD9 /* OpenpayExample */,
+				2D20F45825BB9CFE00269CD9 /* OpenpayExampleTests */,
+				2D20F46325BB9CFE00269CD9 /* OpenpayExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		729190DB1DA4496800C0CD07 /* Resources */ = {
+		2D20F44125BB9CFC00269CD9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7255A4D21DAC522E00198851 /* Localizable.strings in Resources */,
-				7270A4F41DA61C1C00B49B5F /* logo.png in Resources */,
-				729190EB1DA4496800C0CD07 /* LaunchScreen.storyboard in Resources */,
-				729190E81DA4496800C0CD07 /* Assets.xcassets in Resources */,
-				729190E61DA4496800C0CD07 /* Main.storyboard in Resources */,
+				2D20F45325BB9CFE00269CD9 /* LaunchScreen.storyboard in Resources */,
+				2D20F45025BB9CFE00269CD9 /* Assets.xcassets in Resources */,
+				2D20F44E25BB9CFC00269CD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F45725BB9CFE00269CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F46225BB9CFE00269CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D642A1525C07FD1006DA023 /* Remove unused architectures */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove unused architectures";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n# This script loops through the frameworks embedded in the application and \n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		729190D91DA4496800C0CD07 /* Sources */ = {
+		2D20F43F25BB9CFC00269CD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729190E31DA4496800C0CD07 /* MainViewController.swift in Sources */,
-				729190E11DA4496800C0CD07 /* AppDelegate.swift in Sources */,
-				7270A4F61DA6A3EE00B49B5F /* ResultViewController.swift in Sources */,
+				2D20F44B25BB9CFC00269CD9 /* RootViewController.swift in Sources */,
+				2D20F44725BB9CFC00269CD9 /* AppDelegate.swift in Sources */,
+				2D4BE43125BF93B4007D2E63 /* ResultViewController.swift in Sources */,
+				2D20F44925BB9CFC00269CD9 /* SceneDelegate.swift in Sources */,
+				2D20F47D25BBAADB00269CD9 /* DetailViewController.swift in Sources */,
+				2D4BE42D25BF9129007D2E63 /* CardTokenComplete.swift in Sources */,
+				2D20F4EF25BE94E200269CD9 /* CustomFormViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F45525BB9CFE00269CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D20F45E25BB9CFE00269CD9 /* OpenpayExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D20F46025BB9CFE00269CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D20F46925BB9CFE00269CD9 /* OpenpayExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		7255A4D41DAC522E00198851 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7255A4D31DAC522E00198851 /* Base */,
-				7255A4D51DAC523500198851 /* es */,
-				7255A4D61DAC523800198851 /* en */,
-				7255A4D71DAC523900198851 /* es-MX */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		2D20F45B25BB9CFE00269CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D20F44225BB9CFC00269CD9 /* OpenpayExample */;
+			targetProxy = 2D20F45A25BB9CFE00269CD9 /* PBXContainerItemProxy */;
 		};
-		729190E41DA4496800C0CD07 /* Main.storyboard */ = {
+		2D20F46625BB9CFE00269CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D20F44225BB9CFC00269CD9 /* OpenpayExample */;
+			targetProxy = 2D20F46525BB9CFE00269CD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D20F44C25BB9CFC00269CD9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				729190E51DA4496800C0CD07 /* Base */,
-				7255A4B81DAC061B00198851 /* es-MX */,
-				7255A4BC1DAC076800198851 /* es */,
+				2D20F44D25BB9CFC00269CD9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		729190E91DA4496800C0CD07 /* LaunchScreen.storyboard */ = {
+		2D20F45125BB9CFE00269CD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				729190EA1DA4496800C0CD07 /* Base */,
-				7255A4B91DAC061B00198851 /* es-MX */,
-				7255A4BB1DAC076800198851 /* es */,
+				2D20F45225BB9CFE00269CD9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -232,35 +383,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		729191031DA4496800C0CD07 /* Debug */ = {
+		2D20F46B25BB9CFE00269CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -274,46 +434,54 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		729191041DA4496800C0CD07 /* Release */ = {
+		2D20F46C25BB9CFE00269CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -321,76 +489,196 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		729191061DA4496800C0CD07 /* Debug */ = {
+		2D20F46E25BB9CFE00269CD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3M5ZRTGQF4;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				INFOPLIST_FILE = OpenPayExample/Info.plist;
-				INSTALL_PATH = /Applications;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.openpay.OpenpaySwiftExample;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OpenpayExample",
+				);
+				INFOPLIST_FILE = OpenpayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
-		729191071DA4496800C0CD07 /* Release */ = {
+		2D20F46F25BB9CFE00269CD9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3M5ZRTGQF4;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
-				INFOPLIST_FILE = OpenPayExample/Info.plist;
-				INSTALL_PATH = /Applications;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.openpay.OpenpaySwiftExample;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OpenpayExample",
+				);
+				INFOPLIST_FILE = OpenpayExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		2D20F47125BB9CFE00269CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				INFOPLIST_FILE = OpenpayExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenpayExample.app/OpenpayExample";
+			};
+			name = Debug;
+		};
+		2D20F47225BB9CFE00269CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				INFOPLIST_FILE = OpenpayExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenpayExample.app/OpenpayExample";
+			};
+			name = Release;
+		};
+		2D20F47425BB9CFE00269CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				INFOPLIST_FILE = OpenpayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenpayExample;
+			};
+			name = Debug;
+		};
+		2D20F47525BB9CFE00269CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VJH8MSURXG;
+				INFOPLIST_FILE = OpenpayExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qrsof.openpay.library.OpenpayExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenpayExample;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		729190D81DA4496800C0CD07 /* Build configuration list for PBXProject "OpenpayExample" */ = {
+		2D20F43E25BB9CFC00269CD9 /* Build configuration list for PBXProject "OpenpayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				729191031DA4496800C0CD07 /* Debug */,
-				729191041DA4496800C0CD07 /* Release */,
+				2D20F46B25BB9CFE00269CD9 /* Debug */,
+				2D20F46C25BB9CFE00269CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		729191051DA4496800C0CD07 /* Build configuration list for PBXNativeTarget "OpenpayExample" */ = {
+		2D20F46D25BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				729191061DA4496800C0CD07 /* Debug */,
-				729191071DA4496800C0CD07 /* Release */,
+				2D20F46E25BB9CFE00269CD9 /* Debug */,
+				2D20F46F25BB9CFE00269CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D20F47025BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D20F47125BB9CFE00269CD9 /* Debug */,
+				2D20F47225BB9CFE00269CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D20F47325BB9CFE00269CD9 /* Build configuration list for PBXNativeTarget "OpenpayExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D20F47425BB9CFE00269CD9 /* Debug */,
+				2D20F47525BB9CFE00269CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 729190D51DA4496800C0CD07 /* Project object */;
+	rootObject = 2D20F43B25BB9CFC00269CD9 /* Project object */;
 }

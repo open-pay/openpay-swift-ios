@@ -1,0 +1,124 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OpenpayKit
+import Foundation
+import Swift
+import UIKit
+import WebKit
+public struct TokenizeCardRequest {
+  public init(cardNumber: Swift.String, holderName: Swift.String, expirationYear: Swift.String, expirationMonth: Swift.String, cvv2: Swift.String, address: OpenpayKit.Address? = nil)
+  public let cardNumber: Swift.String
+  public let holderName: Swift.String
+  public let expirationYear: Swift.String
+  public let expirationMonth: Swift.String
+  public let cvv2: Swift.String
+  public var address: OpenpayKit.Address?
+}
+public struct Address : Swift.Codable {
+  public let line1: Swift.String?
+  public let line2: Swift.String?
+  public let line3: Swift.String?
+  public let state: Swift.String?
+  public let city: Swift.String?
+  public let postalCode: Swift.String?
+  public var countryCode: Swift.String?
+  public var dictionary: [Swift.String : Any] {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class Openpay {
+  public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool)
+  public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool, isDebug: Swift.Bool)
+  public func createTokenWithCard(address: OpenpayKit.OPAddress!, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
+  public func getTokenWithId(tokenId: Swift.String, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
+  public func createDeviceSessionId(successFunction: @escaping (Swift.String) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
+  public func tokenizeCard(card: OpenpayKit.TokenizeCardRequest, successFunction: @escaping (OpenpayKit.OPToken) -> (), failureFunction: @escaping (Foundation.NSError) -> ())
+  public func loadCardForm(in viewController: UIKit.UIViewController, successFunction: @escaping () -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void, formTitle: Swift.String)
+  @objc deinit
+}
+public class OPToken {
+  public var id: Swift.String
+  public var card: OpenpayKit.OPCard
+  public init()
+  public init(with dictionary: Swift.Dictionary<Swift.String, Any>)
+  @objc deinit
+}
+public class OPCard {
+  public enum OPCardType : Swift.Int {
+    case OPCardTypeUnknown
+    case OPCardTypeVisa
+    case OPCardTypeMastercard
+    case OPCardTypeAmericanExpress
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum OPCardSecurityCodeCheck : Swift.Int {
+    case OPCardSecurityCodeCheckUnknown
+    case OPCardSecurityCodeCheckPassed
+    case OPCardSecurityCodeCheckFailed
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var creationDate: Foundation.NSDate
+  public var id: Swift.String
+  public var bankName: Swift.String
+  public var allowPayouts: Swift.Bool
+  public var holderName: Swift.String
+  public var expirationMonth: Swift.String
+  public var expirationYear: Swift.String
+  public var address: OpenpayKit.OPAddress!
+  public var number: Swift.String {
+    get
+    set(value)
+  }
+  public var brand: Swift.String
+  public var allowsCharges: Swift.Bool
+  public var bankCode: Swift.String
+  public var cvv2: Swift.String
+  public var errors: Foundation.NSMutableArray
+  public var expired: Swift.Bool {
+    get
+  }
+  public var type: OpenpayKit.OPCard.OPCardType {
+    get
+  }
+  public var numberValid: Swift.Bool {
+    get
+  }
+  public var valid: Swift.Bool {
+    get
+  }
+  public var securityCodeCheck: OpenpayKit.OPCard.OPCardSecurityCodeCheck {
+    get
+  }
+  public init()
+  public init(with dictionary: Swift.Dictionary<Swift.String, Any>)
+  public func asDictionary() -> Swift.Dictionary<Swift.String, Any>
+  @objc deinit
+}
+public class OPAddress {
+  public var postalCode: Swift.String
+  public var line1: Swift.String
+  public var line2: Swift.String
+  public var line3: Swift.String
+  public var city: Swift.String
+  public var state: Swift.String
+  public var countryCode: Swift.String
+  public init()
+  public init(with dictionary: Swift.Dictionary<Swift.String, Any>)
+  public func asDictionary() -> Swift.Dictionary<Swift.String, Any>
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class CardView : UIKit.UIView, UIKit.UITextFieldDelegate {
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}

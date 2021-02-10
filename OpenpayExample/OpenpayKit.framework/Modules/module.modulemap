@@ -1,0 +1,4 @@
+framework module OpenpayKit {
+  header "OpenpayKit-Swift.h"
+  requires objc
+}
