@@ -16,7 +16,7 @@ Please refer to the following documentation sections for field documentation:
 
 ## Installation
 
-- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v2.0.13/SDK-V2.0.13.zip).
+- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v3.0.0/SDK-V2.0.13.zip).
 - Add openpay framework (Openpay.framework)
   - Drag & drop the framework library to your workspace
   - Go to General -> Frameworks, Libraries, and Embedded Content and verify that the framework was added. Also set Embed & Sign 
