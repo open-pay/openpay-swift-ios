@@ -139,6 +139,20 @@ func failToken(error: NSError) {
 }
 ```
 
+##### With custom form
+
+```
+ let card = TokenizeCardRequest(cardNumber: cardNumber,holderName:holderName, expirationYear: expirationYear, expirationMonth: expirationMonth, cvv2: cvv2)
+        
+// request token by card model
+openpay.tokenizeCard(card: card) { (OPToken) in
+    print(OPToken.id)            
+} failureFunction: { (NSError) in
+    print(NSError)
+}
+```
+
+
 ## Remove Unused Architectures
 
 The universal framework will run on both simulators and devices. But there is a problem, Apple doesn’t allow to upload the application with unused architectures to the App Store.
