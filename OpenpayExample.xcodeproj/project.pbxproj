@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,8 +19,8 @@
 		2D20F4EF25BE94E200269CD9 /* CustomFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */; };
 		2D4BE42D25BF9129007D2E63 /* CardTokenComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */; };
 		2D4BE43125BF93B4007D2E63 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */; };
-		2DDE41AF25C0C80C00188C56 /* OpenpayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */; };
-		2DDE41B025C0C80C00188C56 /* OpenpayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DB384C02669310000930DFE /* OpenpayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */; };
+		2DB384C12669310000930DFE /* OpenpayKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2DDE41B025C0C80C00188C56 /* OpenpayKit.framework in Embed Frameworks */,
+				2DB384C12669310000930DFE /* OpenpayKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 		2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormViewController.swift; sourceTree = "<group>"; };
 		2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTokenComplete.swift; sourceTree = "<group>"; };
 		2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenpayKit.framework; sourceTree = "<group>"; };
+		2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenpayKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DDE41AF25C0C80C00188C56 /* OpenpayKit.framework in Frameworks */,
+				2DB384C02669310000930DFE /* OpenpayKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,9 +127,9 @@
 		2D20F44525BB9CFC00269CD9 /* OpenpayExample */ = {
 			isa = PBXGroup;
 			children = (
-				2DAAAB8925C08A2B0032B60C /* OpenpayKit.framework */,
 				2D20F44625BB9CFC00269CD9 /* AppDelegate.swift */,
 				2D20F44825BB9CFC00269CD9 /* SceneDelegate.swift */,
+				2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */,
 				2D20F44A25BB9CFC00269CD9 /* RootViewController.swift */,
 				2D20F44C25BB9CFC00269CD9 /* Main.storyboard */,
 				2D20F44F25BB9CFE00269CD9 /* Assets.xcassets */,
@@ -180,7 +180,6 @@
 				2D20F44025BB9CFC00269CD9 /* Frameworks */,
 				2D20F44125BB9CFC00269CD9 /* Resources */,
 				2DDE41B125C0C80C00188C56 /* Embed Frameworks */,
-				2D642A1525C07FD1006DA023 /* Remove unused architectures */,
 			);
 			buildRules = (
 			);
@@ -295,27 +294,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2D642A1525C07FD1006DA023 /* Remove unused architectures */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Remove unused architectures";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n# This script loops through the frameworks embedded in the application and \n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\nEXTRACTED_ARCHS=()\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D20F43F25BB9CFC00269CD9 /* Sources */ = {
@@ -505,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VJH8MSURXG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = VJH8MSURXG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
