@@ -3,7 +3,7 @@
 
 
 iOS swift library for tokenizing credit/debit card and collect device information
-Current version: v3.0.0
+Current version: v3.0.1
 
 
 Please refer to the following documentation sections for field documentation:
@@ -16,7 +16,7 @@ Please refer to the following documentation sections for field documentation:
 
 ## Installation
 
-- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/v3.0.0/OpenpayKit.framework.zip).
+- Download the latest released version (https://github.com/open-pay/openpay-swift-ios/releases/download/3.0.1/OpenpayKit.xcframework.zip).
 - Add openpay framework (Openpay.framework)
   - Drag & drop the framework library to your workspace
   - Go to General -> Frameworks, Libraries, and Embedded Content and verify that the framework was added. Also set Embed & Sign 
@@ -151,42 +151,3 @@ openpay.tokenizeCard(card: card) { (OPToken) in
     print(NSError)
 }
 ```
-
-
-## Remove Unused Architectures
-
-The universal framework will run on both simulators and devices. But there is a problem, Apple doesn’t allow to upload the application with unused architectures to the App Store.
-
-Please make sure that you have "Remove Unused Architectures Script" added in your project.
-
-- Select the Project -> Choose Target -> Project Name -> Select Build Phases -> Press "+" -> New Run Script Phase -> Name the script as "Remove Unused Architectures Script".
-
-Be sure that this Build Phase is the last one
-
-```
-APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
-# This script loops through the frameworks embedded in the application and 
-# removes unused architectures.
-find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
-do
-FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
-FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
-echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
-EXTRACTED_ARCHS=()
-for ARCH in $ARCHS
-do
-echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
-lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
-EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
-done
-echo "Merging extracted architectures: ${ARCHS}"
-lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
-rm "${EXTRACTED_ARCHS[@]}"
-echo "Replacing original executable with thinned version"
-rm "$FRAMEWORK_EXECUTABLE_PATH"
-mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
-done
-
-```
-
-Thats all !. 
