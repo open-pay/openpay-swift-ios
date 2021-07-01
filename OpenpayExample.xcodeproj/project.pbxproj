@@ -17,10 +17,10 @@
 		2D20F46925BB9CFE00269CD9 /* OpenpayExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F46825BB9CFE00269CD9 /* OpenpayExampleUITests.swift */; };
 		2D20F47D25BBAADB00269CD9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F47C25BBAADB00269CD9 /* DetailViewController.swift */; };
 		2D20F4EF25BE94E200269CD9 /* CustomFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */; };
+		2D3042CC268E2EFE00CF1AB7 /* OpenpayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3042CA268E2EF600CF1AB7 /* OpenpayKit.xcframework */; };
+		2D3042CD268E2EFE00CF1AB7 /* OpenpayKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3042CA268E2EF600CF1AB7 /* OpenpayKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D4BE42D25BF9129007D2E63 /* CardTokenComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */; };
 		2D4BE43125BF93B4007D2E63 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */; };
-		2DB384C02669310000930DFE /* OpenpayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */; };
-		2DB384C12669310000930DFE /* OpenpayKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2DB384C12669310000930DFE /* OpenpayKit.xcframework in Embed Frameworks */,
+				2D3042CD268E2EFE00CF1AB7 /* OpenpayKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,9 +72,9 @@
 		2D20F47C25BBAADB00269CD9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2D20F4B525BE87F100269CD9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		2D20F4EE25BE94E200269CD9 /* CustomFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormViewController.swift; sourceTree = "<group>"; };
+		2D3042CA268E2EF600CF1AB7 /* OpenpayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenpayKit.xcframework; sourceTree = "<group>"; };
 		2D4BE42C25BF9129007D2E63 /* CardTokenComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTokenComplete.swift; sourceTree = "<group>"; };
 		2D4BE43025BF93B4007D2E63 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenpayKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB384C02669310000930DFE /* OpenpayKit.xcframework in Frameworks */,
+				2D3042CC268E2EFE00CF1AB7 /* OpenpayKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +129,9 @@
 			children = (
 				2D20F44625BB9CFC00269CD9 /* AppDelegate.swift */,
 				2D20F44825BB9CFC00269CD9 /* SceneDelegate.swift */,
-				2DB384BE266930FC00930DFE /* OpenpayKit.xcframework */,
 				2D20F44A25BB9CFC00269CD9 /* RootViewController.swift */,
 				2D20F44C25BB9CFC00269CD9 /* Main.storyboard */,
+				2D3042CA268E2EF600CF1AB7 /* OpenpayKit.xcframework */,
 				2D20F44F25BB9CFE00269CD9 /* Assets.xcassets */,
 				2D20F45125BB9CFE00269CD9 /* LaunchScreen.storyboard */,
 				2D20F45425BB9CFE00269CD9 /* Info.plist */,

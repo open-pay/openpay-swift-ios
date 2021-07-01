@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OpenpayKit
 import Foundation
 import Swift
@@ -29,8 +29,7 @@ public struct Address : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 public class Openpay {
-  public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool)
-  public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool, isDebug: Swift.Bool)
+  public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool, isDebug: Swift.Bool = false, countryCode: Swift.String = "MX")
   public func createTokenWithCard(address: OpenpayKit.OPAddress!, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
   public func getTokenWithId(tokenId: Swift.String, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
   public func createDeviceSessionId(successFunction: @escaping (Swift.String) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)

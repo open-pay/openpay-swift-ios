@@ -10,75 +10,75 @@
 		</data>
 		<key>Headers/OpenpayKit-Swift.h</key>
 		<data>
-		cCyd5WQGlqG+Aio4ezEuSeni2eM=
+		6ZvsWJpn2L2IsvVzFjZvQ3PwrmE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XeV9tPQpjlHMJ7Wx0XBMtt0syWk=
+		961S3jyOUgS06cIAmFLO4wI0EKM=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ViXnAV9wVk4GQ7lN4eO6u8XbDEU=
+		B8UEXFLDUMsw8EyPKyXAWLYmn2M=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		ViXnAV9wVk4GQ7lN4eO6u8XbDEU=
+		B8UEXFLDUMsw8EyPKyXAWLYmn2M=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		327iDIFEQla1mmBEasE4KODkhQo=
+		fFwsd3UoyDsFGUcETLCSjgnJFJc=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		327iDIFEQla1mmBEasE4KODkhQo=
+		fFwsd3UoyDsFGUcETLCSjgnJFJc=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Xa5J73LF7VwhDNlyaKz7Mi9pUd8=
+		PwRHpd1AUhuDgTDpKT0cHXLY3Co=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v0G/LMHQApwaKJFY2ersjuW3vrs=
+		JfEovarda+bHmt90qdAhV3kptFw=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kQAurwZe1xjJl4vbGnurBfTWmBI=
+		UPO3y6+db8nCke3jmk/DGlSAz2k=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Xa5J73LF7VwhDNlyaKz7Mi9pUd8=
+		PwRHpd1AUhuDgTDpKT0cHXLY3Co=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		v0G/LMHQApwaKJFY2ersjuW3vrs=
+		JfEovarda+bHmt90qdAhV3kptFw=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		kQAurwZe1xjJl4vbGnurBfTWmBI=
+		UPO3y6+db8nCke3jmk/DGlSAz2k=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kBDrx2MtNhd6gwB6g9A/uha8GPs=
+		BmCmGaEbl1rPH8BlLP7NP5IPX7s=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2kGeRAbkMN689TL94dNYdWqm9uE=
+		cs9rBS4z1H2K7OnAD1Ipbdq4iOI=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		G9LJnEHMgg98ls3l3P4CRrXcUUw=
+		4DOg0BG/Rd/RAZFa/EGeUD4hOw4=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		kBDrx2MtNhd6gwB6g9A/uha8GPs=
+		BmCmGaEbl1rPH8BlLP7NP5IPX7s=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		2kGeRAbkMN689TL94dNYdWqm9uE=
+		cs9rBS4z1H2K7OnAD1Ipbdq4iOI=
 		</data>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		G9LJnEHMgg98ls3l3P4CRrXcUUw=
+		4DOg0BG/Rd/RAZFa/EGeUD4hOw4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,7 +88,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dkVbGLcgalL/R2+eIzafJz881gI=
+			8Bq7R4iguBTaH3iRiEGkXHorCTM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q8f1jOaChDEOFfYuPri+cfFoSvw=
+			9idKlAnBfm87NjZx4ZHW0x9yZx4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iKCFUklQFob+b+5xMCu5c2+Wi3M=
+			CDmqza9h7k+Mth+ylufnm9PG0MM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -152,119 +152,119 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GdLmraIp2korySKRNW6cc2KXSDoQVN0wNvB4VSgAVcQ=
+			d0Ssq7rFvhB+I95jJNBt53/KzxpOjPdfnue3YmGxyMQ=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8/u7rWW74sOmItE9fhEN8TF4cdkUqRUBNNzdpbIjLSo=
+			hlsEH9s3743jvxCgr98903BeJ16jDHcr6VMt5rZ1dVw=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8/u7rWW74sOmItE9fhEN8TF4cdkUqRUBNNzdpbIjLSo=
+			hlsEH9s3743jvxCgr98903BeJ16jDHcr6VMt5rZ1dVw=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSh/T2om5PUs5mbHLnIzguQ/qSdBQRgfnSW+sJ6QGn4=
+			qHFug5O0EirRnm0isvqb1Un64zOGfTvQW5XNaZg8coA=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZSh/T2om5PUs5mbHLnIzguQ/qSdBQRgfnSW+sJ6QGn4=
+			qHFug5O0EirRnm0isvqb1Un64zOGfTvQW5XNaZg8coA=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4i3SojylRQK4gChRysEQEheMv0AE8a6aNjjJFaKek7c=
+			AB5E3Ac/NPtISwPhICzJ/8xm8jZHxrwDORX1KclPMn8=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5C8/jID7Vc3L8CFXYfGyOdAjBwREOJLi/eYHop62J98=
+			516zeda0bKw72I5G15x7oz5rVrSmQW0wFU3UU6pYYc8=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKRRXu/OYeN52jHJeylI7NaH32QiDOdkB9pa3j25P/A=
+			kgf2tR5Q5mMMQLG7tP28a9ku2g0GHlZ9ZfFcDYVTBHY=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4i3SojylRQK4gChRysEQEheMv0AE8a6aNjjJFaKek7c=
+			AB5E3Ac/NPtISwPhICzJ/8xm8jZHxrwDORX1KclPMn8=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5C8/jID7Vc3L8CFXYfGyOdAjBwREOJLi/eYHop62J98=
+			516zeda0bKw72I5G15x7oz5rVrSmQW0wFU3UU6pYYc8=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OKRRXu/OYeN52jHJeylI7NaH32QiDOdkB9pa3j25P/A=
+			kgf2tR5Q5mMMQLG7tP28a9ku2g0GHlZ9ZfFcDYVTBHY=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kMPaDBkn1boLf7DAtXulUToQ2MGFFe5DMZuRDOcEM0Y=
+			mevpLD9AvpjrkrT4ooRDO9Q4UXo7D1pM9VRL6PM0Cvc=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fwBJeCAgdoO0v0v/VRychTsxLPH5N8FoW48CToVyKB0=
+			X+xeice3He/vGGPspn0DcT37X5JcXKhFojcgVhJCZUM=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BmWzx7aUUuF3nsGspDEW8W7cfUmYM/GMXWoE4TBt4L8=
+			y99YPSULm0ar892OB4ZlSfI9EDl7TmDcK4WLinwekpA=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kMPaDBkn1boLf7DAtXulUToQ2MGFFe5DMZuRDOcEM0Y=
+			mevpLD9AvpjrkrT4ooRDO9Q4UXo7D1pM9VRL6PM0Cvc=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fwBJeCAgdoO0v0v/VRychTsxLPH5N8FoW48CToVyKB0=
+			X+xeice3He/vGGPspn0DcT37X5JcXKhFojcgVhJCZUM=
 			</data>
 		</dict>
 		<key>Modules/OpenpayKit.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BmWzx7aUUuF3nsGspDEW8W7cfUmYM/GMXWoE4TBt4L8=
+			y99YPSULm0ar892OB4ZlSfI9EDl7TmDcK4WLinwekpA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -278,7 +278,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HsEWd4Sm1/Onatm3xTT73acGKGfnI0F3QtTVf1Cb3MQ=
+			WaEW2dSCUWmJa/PAgclIXTq0asUtiGWGcGCrFJzijAE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -296,7 +296,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Foqibd3NDTb7J62LCSZ+ypuhbQ+H9oQBT0tI4+nMNKE=
+			iFpGNC8XzQd3FmlB0SAvk+4RqtrbZ5qpnlOb3ZqfYOg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -314,7 +314,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hCU72tny7eC2B/jjkoKYu0IBdh3nUj8jC10tstvok58=
+			+QyMeXJahcebMhrTREew1vPSN80JFww8qvPYxcz9elA=
 			</data>
 			<key>optional</key>
 			<true/>

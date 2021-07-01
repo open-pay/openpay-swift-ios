@@ -42,8 +42,11 @@ static let API_KEY = "apiKey"
 var openpay : Openpay!
 
 func myFunction() {
-	openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false)
+	openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false,countryCode: "MX")
 }
+
+//You can instantiate with a country code. Currently supported codes are: MX and CO. Any other code will do a fallback to MX an MX is the default if you dont specify a country code.
+
 ```
 
 #### Production Mode
