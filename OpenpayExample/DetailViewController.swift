@@ -11,8 +11,8 @@ import OpenpayKit
 class DetailViewController: UIViewController,CardTokenComplete {
     
     var openpay: Openpay!
-    static let MERCHANT_ID = "mwf7x79goz7afkdbuyqd"             // Generated in Openpay account registration
-    static let API_KEY = "pk_575c5a2837d94433a57cf1590bf849b0"  // Generated in Openpay account registration
+    static let MERCHANT_ID = "m3cji4ughukthjcsglv0"             // Generated in Openpay account registration
+    static let API_KEY = "pk_041b934cacef4780929cc7a3d21d1403"  // Generated in Openpay account registration
     
     var sessionID: String!
     var tokenID: String!
@@ -23,7 +23,7 @@ class DetailViewController: UIViewController,CardTokenComplete {
         super.viewDidLoad()
                 
         // Init library
-        openpay = Openpay(withMerchantId: DetailViewController.MERCHANT_ID, andApiKey: DetailViewController.API_KEY, isProductionMode: false, isDebug: true,countryCode: "CO")
+        openpay = Openpay(withMerchantId: DetailViewController.MERCHANT_ID, andApiKey: DetailViewController.API_KEY, isProductionMode: false, isDebug: true,countryCode: "PE")
         
         // Get session id
         openpay.createDeviceSessionId(successFunction: successSessionID, failureFunction: failSessionID)

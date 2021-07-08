@@ -45,7 +45,7 @@ func myFunction() {
 	openpay = Openpay(withMerchantId: MERCHANT_ID, andApiKey: API_KEY, isProductionMode: false, isDebug: false,countryCode: "MX")
 }
 
-//You can instantiate with a country code. Currently supported codes are: MX and CO. Any other code will do a fallback to MX an MX is the default if you dont specify a country code.
+//You can instantiate with a country code. Currently supported codes are: MX for Mexico, CO for Colombia and PE for Peru. Any other code will do a fallback to MX an MX is the default if you dont specify a country code.
 
 ```
 
