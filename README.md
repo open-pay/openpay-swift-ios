@@ -142,6 +142,26 @@ func failToken(error: NSError) {
 }
 ```
 
+##### With custom address
+```swift
+func successCard() {
+print("Success Card Capture...")
+
+        let addressDictionary: Dictionary<String, Any> = [
+            "postal_code":"76000",
+            "line1":"Av 5 de Febrero",
+            "line2":"Roble 207",
+            "line3":"Col. Felipe",
+            "city":"Querétaro",
+            "state":"Querétaro",
+            "country_code":"MX"
+        ]
+        
+        // create token with card info from default form
+        openpay.createTokenWithCard(address: OPAddress(with: addressDictionary), successFunction: successToken, failureFunction: failToken)
+    }
+```
+
 ##### With custom form
 
 ```
