@@ -1,5 +1,5 @@
 
-![Openpay iOS](http://www.openpay.mx/img/github/ios.jpg)
+![Openpay iOS](https://www.openpay.mx/img/github/ios_new.jpg)
 
 
 iOS swift library for tokenizing credit/debit card and collect device information
