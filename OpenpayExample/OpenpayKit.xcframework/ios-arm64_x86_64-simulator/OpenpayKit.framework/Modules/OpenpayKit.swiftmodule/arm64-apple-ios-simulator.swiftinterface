@@ -1,10 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OpenpayKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
+import _StringProcessing
 public struct TokenizeCardRequest {
   public init(cardNumber: Swift.String, holderName: Swift.String, expirationYear: Swift.String, expirationMonth: Swift.String, cvv2: Swift.String, address: OpenpayKit.Address? = nil)
   public let cardNumber: Swift.String
@@ -30,11 +33,11 @@ public struct Address : Swift.Codable {
 }
 public class Openpay {
   public init(withMerchantId merchantId: Swift.String, andApiKey apiKey: Swift.String, isProductionMode: Swift.Bool, isDebug: Swift.Bool = false, countryCode: Swift.String = "MX")
-  public func createTokenWithCard(address: OpenpayKit.OPAddress!, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
-  public func getTokenWithId(tokenId: Swift.String, successFunction: @escaping (OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
-  public func createDeviceSessionId(successFunction: @escaping (Swift.String) -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void)
+  public func createTokenWithCard(address: OpenpayKit.OPAddress!, successFunction: @escaping (_ responseParams: OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (_ error: Foundation.NSError) -> Swift.Void)
+  public func getTokenWithId(tokenId: Swift.String, successFunction: @escaping (_ responseParams: OpenpayKit.OPToken) -> Swift.Void, failureFunction: @escaping (_ error: Foundation.NSError) -> Swift.Void)
+  public func createDeviceSessionId(successFunction: @escaping (_ sessionId: Swift.String) -> Swift.Void, failureFunction: @escaping (_ error: Foundation.NSError) -> Swift.Void)
   public func tokenizeCard(card: OpenpayKit.TokenizeCardRequest, successFunction: @escaping (OpenpayKit.OPToken) -> (), failureFunction: @escaping (Foundation.NSError) -> ())
-  public func loadCardForm(in viewController: UIKit.UIViewController, successFunction: @escaping () -> Swift.Void, failureFunction: @escaping (Foundation.NSError) -> Swift.Void, formTitle: Swift.String)
+  public func loadCardForm(in viewController: UIKit.UIViewController, successFunction: @escaping () -> Swift.Void, failureFunction: @escaping (_ error: Foundation.NSError) -> Swift.Void, formTitle: Swift.String)
   @objc deinit
 }
 public class OPToken {
@@ -111,9 +114,9 @@ public class OPAddress {
   public func asDictionary() -> Swift.Dictionary<Swift.String, Any>
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers public class CardView : UIKit.UIView, UIKit.UITextFieldDelegate {
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CardView : UIKit.UIView, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension OpenpayKit.OPCard.OPCardType : Swift.Equatable {}
