@@ -1,0 +1,5179 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TokenizeCardRequest",
+        "printedName": "TokenizeCardRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cardNumber:holderName:expirationYear:expirationMonth:cvv2:address:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TokenizeCardRequest",
+                "printedName": "OpenpayKit.TokenizeCardRequest",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenpayKit.Address?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Address",
+                    "printedName": "OpenpayKit.Address",
+                    "usr": "s:10OpenpayKit7AddressV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV10cardNumber10holderName14expirationYear0J5Month4cvv27addressACSS_S4SAA7AddressVSgtcfc",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV10cardNumber10holderName14expirationYear0J5Month4cvv27addressACSS_S4SAA7AddressVSgtcfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "cardNumber",
+            "printedName": "cardNumber",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV10cardNumberSSvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV10cardNumberSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV10cardNumberSSvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV10cardNumberSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "holderName",
+            "printedName": "holderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV10holderNameSSvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV10holderNameSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV10holderNameSSvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV10holderNameSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationYear",
+            "printedName": "expirationYear",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV14expirationYearSSvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV14expirationYearSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV14expirationYearSSvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV14expirationYearSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationMonth",
+            "printedName": "expirationMonth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV15expirationMonthSSvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV15expirationMonthSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV15expirationMonthSSvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV15expirationMonthSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cvv2",
+            "printedName": "cvv2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV4cvv2SSvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV4cvv2SSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV4cvv2SSvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV4cvv2SSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenpayKit.Address?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Address",
+                    "printedName": "OpenpayKit.Address",
+                    "usr": "s:10OpenpayKit7AddressV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvp",
+            "mangledName": "$s10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OpenpayKit.Address?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Address",
+                        "printedName": "OpenpayKit.Address",
+                        "usr": "s:10OpenpayKit7AddressV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvg",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OpenpayKit.Address?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Address",
+                        "printedName": "OpenpayKit.Address",
+                        "usr": "s:10OpenpayKit7AddressV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvs",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvM",
+                "mangledName": "$s10OpenpayKit19TokenizeCardRequestV7addressAA7AddressVSgvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OpenpayKit19TokenizeCardRequestV",
+        "mangledName": "$s10OpenpayKit19TokenizeCardRequestV",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Address",
+        "printedName": "Address",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "line1",
+            "printedName": "line1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV5line1SSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV5line1SSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV5line1SSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV5line1SSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line2",
+            "printedName": "line2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV5line2SSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV5line2SSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV5line2SSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV5line2SSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line3",
+            "printedName": "line3",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV5line3SSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV5line3SSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV5line3SSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV5line3SSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV5stateSSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV5stateSSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV5stateSSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV5stateSSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "city",
+            "printedName": "city",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV4citySSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV4citySSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV4citySSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV4citySSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postalCode",
+            "printedName": "postalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV10postalCodeSSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV10postalCodeSSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV10postalCodeSSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV10postalCodeSSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV11countryCodeSSSgvp",
+            "mangledName": "$s10OpenpayKit7AddressV11countryCodeSSSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV11countryCodeSSSgvg",
+                "mangledName": "$s10OpenpayKit7AddressV11countryCodeSSSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV11countryCodeSSSgvs",
+                "mangledName": "$s10OpenpayKit7AddressV11countryCodeSSSgvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV11countryCodeSSSgvM",
+                "mangledName": "$s10OpenpayKit7AddressV11countryCodeSSSgvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dictionary",
+            "printedName": "dictionary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7AddressV10dictionarySDySSypGvp",
+            "mangledName": "$s10OpenpayKit7AddressV10dictionarySDySSypGvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7AddressV10dictionarySDySSypGvg",
+                "mangledName": "$s10OpenpayKit7AddressV10dictionarySDySSypGvg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Address",
+                "printedName": "OpenpayKit.Address",
+                "usr": "s:10OpenpayKit7AddressV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit7AddressV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10OpenpayKit7AddressV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OpenpayKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit7AddressV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10OpenpayKit7AddressV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OpenpayKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10OpenpayKit7AddressV",
+        "mangledName": "$s10OpenpayKit7AddressV",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Openpay",
+        "printedName": "Openpay",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(withMerchantId:andApiKey:isProductionMode:isDebug:countryCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Openpay",
+                "printedName": "OpenpayKit.Openpay",
+                "usr": "s:10OpenpayKit0A0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit0A0C14withMerchantId9andApiKey16isProductionMode0I5Debug11countryCodeACSS_SSS2bSStcfc",
+            "mangledName": "$s10OpenpayKit0A0C14withMerchantId9andApiKey16isProductionMode0I5Debug11countryCodeACSS_SSS2bSStcfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createTokenWithCard",
+            "printedName": "createTokenWithCard(address:successFunction:failureFunction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "OpenpayKit.OPAddress?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPAddress",
+                    "printedName": "OpenpayKit.OPAddress",
+                    "usr": "s:10OpenpayKit9OPAddressC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OpenpayKit.OPToken) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPToken",
+                    "printedName": "OpenpayKit.OPToken",
+                    "usr": "s:10OpenpayKit7OPTokenC"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit0A0C19createTokenWithCard7address15successFunction07failureI0yAA9OPAddressCSg_yAA7OPTokenCcySo7NSErrorCctF",
+            "mangledName": "$s10OpenpayKit0A0C19createTokenWithCard7address15successFunction07failureI0yAA9OPAddressCSg_yAA7OPTokenCcySo7NSErrorCctF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTokenWithId",
+            "printedName": "getTokenWithId(tokenId:successFunction:failureFunction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OpenpayKit.OPToken) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPToken",
+                    "printedName": "OpenpayKit.OPToken",
+                    "usr": "s:10OpenpayKit7OPTokenC"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit0A0C14getTokenWithId05tokenF015successFunction07failureI0ySS_yAA7OPTokenCcySo7NSErrorCctF",
+            "mangledName": "$s10OpenpayKit0A0C14getTokenWithId05tokenF015successFunction07failureI0ySS_yAA7OPTokenCcySo7NSErrorCctF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createDeviceSessionId",
+            "printedName": "createDeviceSessionId(successFunction:failureFunction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit0A0C21createDeviceSessionId15successFunction07failureH0yySSc_ySo7NSErrorCctF",
+            "mangledName": "$s10OpenpayKit0A0C21createDeviceSessionId15successFunction07failureH0yySSc_ySo7NSErrorCctF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenizeCard",
+            "printedName": "tokenizeCard(card:successFunction:failureFunction:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TokenizeCardRequest",
+                "printedName": "OpenpayKit.TokenizeCardRequest",
+                "usr": "s:10OpenpayKit19TokenizeCardRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OpenpayKit.OPToken) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPToken",
+                    "printedName": "OpenpayKit.OPToken",
+                    "usr": "s:10OpenpayKit7OPTokenC"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit0A0C12tokenizeCard4card15successFunction07failureG0yAA08TokenizeD7RequestV_yAA7OPTokenCcySo7NSErrorCctF",
+            "mangledName": "$s10OpenpayKit0A0C12tokenizeCard4card15successFunction07failureG0yAA08TokenizeD7RequestV_yAA7OPTokenCcySo7NSErrorCctF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadCardForm",
+            "printedName": "loadCardForm(in:successFunction:failureFunction:formTitle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit0A0C12loadCardForm2in15successFunction07failureH09formTitleySo16UIViewControllerC_yycySo7NSErrorCcSStF",
+            "mangledName": "$s10OpenpayKit0A0C12loadCardForm2in15successFunction07failureH09formTitleySo16UIViewControllerC_yycySo7NSErrorCcSStF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OpenpayKit0A0C",
+        "mangledName": "$s10OpenpayKit0A0C",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OPToken",
+        "printedName": "OPToken",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7OPTokenC2idSSvp",
+            "mangledName": "$s10OpenpayKit7OPTokenC2idSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC2idSSvg",
+                "mangledName": "$s10OpenpayKit7OPTokenC2idSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC2idSSvs",
+                "mangledName": "$s10OpenpayKit7OPTokenC2idSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC2idSSvM",
+                "mangledName": "$s10OpenpayKit7OPTokenC2idSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "card",
+            "printedName": "card",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPCard",
+                "printedName": "OpenpayKit.OPCard",
+                "usr": "s:10OpenpayKit6OPCardC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit7OPTokenC4cardAA6OPCardCvp",
+            "mangledName": "$s10OpenpayKit7OPTokenC4cardAA6OPCardCvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPCard",
+                    "printedName": "OpenpayKit.OPCard",
+                    "usr": "s:10OpenpayKit6OPCardC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC4cardAA6OPCardCvg",
+                "mangledName": "$s10OpenpayKit7OPTokenC4cardAA6OPCardCvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPCard",
+                    "printedName": "OpenpayKit.OPCard",
+                    "usr": "s:10OpenpayKit6OPCardC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC4cardAA6OPCardCvs",
+                "mangledName": "$s10OpenpayKit7OPTokenC4cardAA6OPCardCvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit7OPTokenC4cardAA6OPCardCvM",
+                "mangledName": "$s10OpenpayKit7OPTokenC4cardAA6OPCardCvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPToken",
+                "printedName": "OpenpayKit.OPToken",
+                "usr": "s:10OpenpayKit7OPTokenC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit7OPTokenCACycfc",
+            "mangledName": "$s10OpenpayKit7OPTokenCACycfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPToken",
+                "printedName": "OpenpayKit.OPToken",
+                "usr": "s:10OpenpayKit7OPTokenC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit7OPTokenC4withACSDySSypG_tcfc",
+            "mangledName": "$s10OpenpayKit7OPTokenC4withACSDySSypG_tcfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OpenpayKit7OPTokenC",
+        "mangledName": "$s10OpenpayKit7OPTokenC",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OPCard",
+        "printedName": "OPCard",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "OPCardType",
+            "printedName": "OPCardType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "OPCardTypeUnknown",
+                "printedName": "OPCardTypeUnknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardType.Type) -> OpenpayKit.OPCard.OPCardType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardType",
+                        "printedName": "OpenpayKit.OPCard.OPCardType",
+                        "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardType",
+                            "printedName": "OpenpayKit.OPCard.OPCardType",
+                            "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO0cD7UnknownyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO0cD7UnknownyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Var",
+                "name": "OPCardTypeVisa",
+                "printedName": "OPCardTypeVisa",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardType.Type) -> OpenpayKit.OPCard.OPCardType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardType",
+                        "printedName": "OpenpayKit.OPCard.OPCardType",
+                        "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardType",
+                            "printedName": "OpenpayKit.OPCard.OPCardType",
+                            "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO0cD4VisayA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO0cD4VisayA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Var",
+                "name": "OPCardTypeMastercard",
+                "printedName": "OPCardTypeMastercard",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardType.Type) -> OpenpayKit.OPCard.OPCardType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardType",
+                        "printedName": "OpenpayKit.OPCard.OPCardType",
+                        "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardType",
+                            "printedName": "OpenpayKit.OPCard.OPCardType",
+                            "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO0cD10MastercardyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO0cD10MastercardyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Var",
+                "name": "OPCardTypeAmericanExpress",
+                "printedName": "OPCardTypeAmericanExpress",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardType.Type) -> OpenpayKit.OPCard.OPCardType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardType",
+                        "printedName": "OpenpayKit.OPCard.OPCardType",
+                        "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardType",
+                            "printedName": "OpenpayKit.OPCard.OPCardType",
+                            "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO0cD15AmericanExpressyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO0cD15AmericanExpressyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OpenpayKit.OPCard.OPCardType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardType",
+                        "printedName": "OpenpayKit.OPCard.OPCardType",
+                        "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO8rawValueAESgSi_tcfc",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO8rawValueAESgSi_tcfc",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO8rawValueSivp",
+                "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO8rawValueSivp",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10OpenpayKit6OPCardC0C4TypeO8rawValueSivg",
+                    "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO8rawValueSivg",
+                    "moduleName": "OpenpayKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10OpenpayKit6OPCardC0C4TypeO",
+            "mangledName": "$s10OpenpayKit6OPCardC0C4TypeO",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "OPCardSecurityCodeCheck",
+            "printedName": "OPCardSecurityCodeCheck",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "OPCardSecurityCodeCheckUnknown",
+                "printedName": "OPCardSecurityCodeCheckUnknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type) -> OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardSecurityCodeCheck",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                        "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardSecurityCodeCheck",
+                            "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                            "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF7UnknownyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF7UnknownyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Var",
+                "name": "OPCardSecurityCodeCheckPassed",
+                "printedName": "OPCardSecurityCodeCheckPassed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type) -> OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardSecurityCodeCheck",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                        "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardSecurityCodeCheck",
+                            "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                            "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF6PassedyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF6PassedyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Var",
+                "name": "OPCardSecurityCodeCheckFailed",
+                "printedName": "OPCardSecurityCodeCheckFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type) -> OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardSecurityCodeCheck",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                        "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OPCardSecurityCodeCheck",
+                            "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                            "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF6FailedyA2EmF",
+                "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO0cdeF6FailedyA2EmF",
+                "moduleName": "OpenpayKit"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPCardSecurityCodeCheck",
+                        "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                        "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueAESgSi_tcfc",
+                "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueAESgSi_tcfc",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueSivp",
+                "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueSivp",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueSivg",
+                    "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO8rawValueSivg",
+                    "moduleName": "OpenpayKit",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO",
+            "mangledName": "$s10OpenpayKit6OPCardC0C17SecurityCodeCheckO",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creationDate",
+            "printedName": "creationDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC12creationDateSo6NSDateCvp",
+            "mangledName": "$s10OpenpayKit6OPCardC12creationDateSo6NSDateCvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12creationDateSo6NSDateCvg",
+                "mangledName": "$s10OpenpayKit6OPCardC12creationDateSo6NSDateCvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12creationDateSo6NSDateCvs",
+                "mangledName": "$s10OpenpayKit6OPCardC12creationDateSo6NSDateCvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12creationDateSo6NSDateCvM",
+                "mangledName": "$s10OpenpayKit6OPCardC12creationDateSo6NSDateCvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC2idSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC2idSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC2idSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC2idSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC2idSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC2idSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC2idSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC2idSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bankName",
+            "printedName": "bankName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC8bankNameSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC8bankNameSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankNameSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankNameSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankNameSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankNameSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankNameSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankNameSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowPayouts",
+            "printedName": "allowPayouts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC12allowPayoutsSbvp",
+            "mangledName": "$s10OpenpayKit6OPCardC12allowPayoutsSbvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12allowPayoutsSbvg",
+                "mangledName": "$s10OpenpayKit6OPCardC12allowPayoutsSbvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12allowPayoutsSbvs",
+                "mangledName": "$s10OpenpayKit6OPCardC12allowPayoutsSbvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC12allowPayoutsSbvM",
+                "mangledName": "$s10OpenpayKit6OPCardC12allowPayoutsSbvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "holderName",
+            "printedName": "holderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC10holderNameSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC10holderNameSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC10holderNameSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC10holderNameSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC10holderNameSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC10holderNameSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC10holderNameSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC10holderNameSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationMonth",
+            "printedName": "expirationMonth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC15expirationMonthSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC15expirationMonthSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC15expirationMonthSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC15expirationMonthSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC15expirationMonthSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC15expirationMonthSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC15expirationMonthSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC15expirationMonthSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationYear",
+            "printedName": "expirationYear",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC14expirationYearSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC14expirationYearSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC14expirationYearSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC14expirationYearSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC14expirationYearSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC14expirationYearSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC14expirationYearSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC14expirationYearSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "address",
+            "printedName": "address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "OpenpayKit.OPAddress?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPAddress",
+                    "printedName": "OpenpayKit.OPAddress",
+                    "usr": "s:10OpenpayKit9OPAddressC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC7addressAA9OPAddressCSgvp",
+            "mangledName": "$s10OpenpayKit6OPCardC7addressAA9OPAddressCSgvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "OpenpayKit.OPAddress?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPAddress",
+                        "printedName": "OpenpayKit.OPAddress",
+                        "usr": "s:10OpenpayKit9OPAddressC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC7addressAA9OPAddressCSgvg",
+                "mangledName": "$s10OpenpayKit6OPCardC7addressAA9OPAddressCSgvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "OpenpayKit.OPAddress?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OPAddress",
+                        "printedName": "OpenpayKit.OPAddress",
+                        "usr": "s:10OpenpayKit9OPAddressC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC7addressAA9OPAddressCSgvs",
+                "mangledName": "$s10OpenpayKit6OPCardC7addressAA9OPAddressCSgvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC7addressAA9OPAddressCSgvM",
+                "mangledName": "$s10OpenpayKit6OPCardC7addressAA9OPAddressCSgvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "number",
+            "printedName": "number",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC6numberSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC6numberSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6numberSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC6numberSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6numberSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC6numberSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6numberSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC6numberSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "brand",
+            "printedName": "brand",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC5brandSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC5brandSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC5brandSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC5brandSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC5brandSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC5brandSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC5brandSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC5brandSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowsCharges",
+            "printedName": "allowsCharges",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC13allowsChargesSbvp",
+            "mangledName": "$s10OpenpayKit6OPCardC13allowsChargesSbvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC13allowsChargesSbvg",
+                "mangledName": "$s10OpenpayKit6OPCardC13allowsChargesSbvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC13allowsChargesSbvs",
+                "mangledName": "$s10OpenpayKit6OPCardC13allowsChargesSbvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC13allowsChargesSbvM",
+                "mangledName": "$s10OpenpayKit6OPCardC13allowsChargesSbvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bankCode",
+            "printedName": "bankCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC8bankCodeSSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC8bankCodeSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankCodeSSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankCodeSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankCodeSSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankCodeSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC8bankCodeSSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC8bankCodeSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cvv2",
+            "printedName": "cvv2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC4cvv2SSvp",
+            "mangledName": "$s10OpenpayKit6OPCardC4cvv2SSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC4cvv2SSvg",
+                "mangledName": "$s10OpenpayKit6OPCardC4cvv2SSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC4cvv2SSvs",
+                "mangledName": "$s10OpenpayKit6OPCardC4cvv2SSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC4cvv2SSvM",
+                "mangledName": "$s10OpenpayKit6OPCardC4cvv2SSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errors",
+            "printedName": "errors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSMutableArray",
+                "printedName": "Foundation.NSMutableArray",
+                "usr": "c:objc(cs)NSMutableArray"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvp",
+            "mangledName": "$s10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSMutableArray",
+                    "printedName": "Foundation.NSMutableArray",
+                    "usr": "c:objc(cs)NSMutableArray"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvg",
+                "mangledName": "$s10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSMutableArray",
+                    "printedName": "Foundation.NSMutableArray",
+                    "usr": "c:objc(cs)NSMutableArray"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvs",
+                "mangledName": "$s10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvM",
+                "mangledName": "$s10OpenpayKit6OPCardC6errorsSo14NSMutableArrayCvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expired",
+            "printedName": "expired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC7expiredSbvp",
+            "mangledName": "$s10OpenpayKit6OPCardC7expiredSbvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC7expiredSbvg",
+                "mangledName": "$s10OpenpayKit6OPCardC7expiredSbvg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPCardType",
+                "printedName": "OpenpayKit.OPCard.OPCardType",
+                "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC4typeAC0C4TypeOvp",
+            "mangledName": "$s10OpenpayKit6OPCardC4typeAC0C4TypeOvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPCardType",
+                    "printedName": "OpenpayKit.OPCard.OPCardType",
+                    "usr": "s:10OpenpayKit6OPCardC0C4TypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC4typeAC0C4TypeOvg",
+                "mangledName": "$s10OpenpayKit6OPCardC4typeAC0C4TypeOvg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "numberValid",
+            "printedName": "numberValid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC11numberValidSbvp",
+            "mangledName": "$s10OpenpayKit6OPCardC11numberValidSbvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC11numberValidSbvg",
+                "mangledName": "$s10OpenpayKit6OPCardC11numberValidSbvg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "valid",
+            "printedName": "valid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC5validSbvp",
+            "mangledName": "$s10OpenpayKit6OPCardC5validSbvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC5validSbvg",
+                "mangledName": "$s10OpenpayKit6OPCardC5validSbvg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "securityCodeCheck",
+            "printedName": "securityCodeCheck",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPCardSecurityCodeCheck",
+                "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit6OPCardC17securityCodeCheckAC0c8SecurityeF0Ovp",
+            "mangledName": "$s10OpenpayKit6OPCardC17securityCodeCheckAC0c8SecurityeF0Ovp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OPCardSecurityCodeCheck",
+                    "printedName": "OpenpayKit.OPCard.OPCardSecurityCodeCheck",
+                    "usr": "s:10OpenpayKit6OPCardC0C17SecurityCodeCheckO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit6OPCardC17securityCodeCheckAC0c8SecurityeF0Ovg",
+                "mangledName": "$s10OpenpayKit6OPCardC17securityCodeCheckAC0c8SecurityeF0Ovg",
+                "moduleName": "OpenpayKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPCard",
+                "printedName": "OpenpayKit.OPCard",
+                "usr": "s:10OpenpayKit6OPCardC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit6OPCardCACycfc",
+            "mangledName": "$s10OpenpayKit6OPCardCACycfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPCard",
+                "printedName": "OpenpayKit.OPCard",
+                "usr": "s:10OpenpayKit6OPCardC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit6OPCardC4withACSDySSypG_tcfc",
+            "mangledName": "$s10OpenpayKit6OPCardC4withACSDySSypG_tcfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "asDictionary",
+            "printedName": "asDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit6OPCardC12asDictionarySDySSypGyF",
+            "mangledName": "$s10OpenpayKit6OPCardC12asDictionarySDySSypGyF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OpenpayKit6OPCardC",
+        "mangledName": "$s10OpenpayKit6OPCardC",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OPAddress",
+        "printedName": "OPAddress",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "postalCode",
+            "printedName": "postalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC10postalCodeSSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC10postalCodeSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC10postalCodeSSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC10postalCodeSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC10postalCodeSSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC10postalCodeSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC10postalCodeSSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC10postalCodeSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line1",
+            "printedName": "line1",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC5line1SSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC5line1SSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line1SSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line1SSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line1SSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line1SSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line1SSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line1SSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line2",
+            "printedName": "line2",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC5line2SSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC5line2SSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line2SSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line2SSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line2SSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line2SSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line2SSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line2SSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "line3",
+            "printedName": "line3",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC5line3SSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC5line3SSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line3SSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line3SSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line3SSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line3SSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5line3SSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC5line3SSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "city",
+            "printedName": "city",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC4citySSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC4citySSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC4citySSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC4citySSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC4citySSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC4citySSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC4citySSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC4citySSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC5stateSSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC5stateSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5stateSSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC5stateSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5stateSSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC5stateSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC5stateSSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC5stateSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "countryCode",
+            "printedName": "countryCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OpenpayKit9OPAddressC11countryCodeSSvp",
+            "mangledName": "$s10OpenpayKit9OPAddressC11countryCodeSSvp",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC11countryCodeSSvg",
+                "mangledName": "$s10OpenpayKit9OPAddressC11countryCodeSSvg",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC11countryCodeSSvs",
+                "mangledName": "$s10OpenpayKit9OPAddressC11countryCodeSSvs",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OpenpayKit9OPAddressC11countryCodeSSvM",
+                "mangledName": "$s10OpenpayKit9OPAddressC11countryCodeSSvM",
+                "moduleName": "OpenpayKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPAddress",
+                "printedName": "OpenpayKit.OPAddress",
+                "usr": "s:10OpenpayKit9OPAddressC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit9OPAddressCACycfc",
+            "mangledName": "$s10OpenpayKit9OPAddressCACycfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OPAddress",
+                "printedName": "OpenpayKit.OPAddress",
+                "usr": "s:10OpenpayKit9OPAddressC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OpenpayKit9OPAddressC4withACSDySSypG_tcfc",
+            "mangledName": "$s10OpenpayKit9OPAddressC4withACSDySSypG_tcfc",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "asDictionary",
+            "printedName": "asDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OpenpayKit9OPAddressC12asDictionarySDySSypGyF",
+            "mangledName": "$s10OpenpayKit9OPAddressC12asDictionarySDySSypGyF",
+            "moduleName": "OpenpayKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OpenpayKit9OPAddressC",
+        "mangledName": "$s10OpenpayKit9OPAddressC",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CardView",
+        "printedName": "CardView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardView",
+                "printedName": "OpenpayKit.CardView",
+                "usr": "c:@M@OpenpayKit@objc(cs)CardView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenpayKit@objc(cs)CardView(im)initWithFrame:",
+            "mangledName": "$s10OpenpayKit8CardViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "OpenpayKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OpenpayKit.CardView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardView",
+                    "printedName": "OpenpayKit.CardView",
+                    "usr": "c:@M@OpenpayKit@objc(cs)CardView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@OpenpayKit@objc(cs)CardView(im)initWithCoder:",
+            "mangledName": "$s10OpenpayKit8CardViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "OpenpayKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@OpenpayKit@objc(cs)CardView",
+        "mangledName": "$s10OpenpayKit8CardViewC",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OpenpayKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Address.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 4,
+      "value": "\"MX\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 253,
+      "length": 32,
+      "value": "\"https:\/\/sandbox-api.openpay.mx\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 24,
+      "value": "\"https:\/\/api.openpay.mx\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 24,
+      "value": "\"https:\/\/api.openpay.co\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 477,
+      "length": 32,
+      "value": "\"https:\/\/sandbox-api.openpay.co\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 563,
+      "length": 24,
+      "value": "\"https:\/\/api.openpay.pe\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 32,
+      "value": "\"https:\/\/sandbox-api.openpay.pe\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 709,
+      "length": 5,
+      "value": "\"1.1\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 8,
+      "value": "\"tokens\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 811,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 862,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 913,
+      "length": 7,
+      "value": "\"3.2.1\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 960,
+      "length": 21,
+      "value": "\"com.openpay.ios.lib\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 37,
+      "value": "\"com.openpay.ios.lib:ErrorMessageKey\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1099,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1931,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1973,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2014,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2054,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2093,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2159,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2181,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2204,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2226,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2247,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2269,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2293,
+      "length": 2,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2318,
+      "length": 2,
+      "value": "98"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2343,
+      "length": 2,
+      "value": "97"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2159,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2181,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2204,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2226,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2247,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2269,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2293,
+      "length": 2,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2318,
+      "length": 2,
+      "value": "98"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2343,
+      "length": 2,
+      "value": "97"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2159,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2181,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2204,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2226,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2247,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2269,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2293,
+      "length": 2,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2318,
+      "length": 2,
+      "value": "98"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2343,
+      "length": 2,
+      "value": "97"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2527,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/Openpay.swift",
+      "kind": "StringLiteral",
+      "offset": 2571,
+      "length": 4,
+      "value": "\"MX\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 269,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 293,
+      "length": 20,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 25,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 269,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 293,
+      "length": 20,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 25,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 269,
+      "length": 14,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 293,
+      "length": 20,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 323,
+      "length": 25,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 29,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 29,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 29,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 29,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 29,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 29,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/OPCard.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/PickerControl.swift",
+      "kind": "Array",
+      "offset": 318,
+      "length": 4,
+      "value": "[[]]"
+    },
+    {
+      "filePath": "\/Users\/freddysilva\/Development\/Projects\/Openpay\/OpenpayKit\/OpenpayKit\/CardHttpModel.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
